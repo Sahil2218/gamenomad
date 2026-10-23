@@ -1,0 +1,2453 @@
+{
+  "image": "map-gate",
+  "width": 1448,
+  "height": 1500,
+  "area": "Paradise Gate",
+  "spawn": {
+    "x": 692,
+    "y": 1438,
+    "facing": "up"
+  },
+  "colliders": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 674,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "w": 12,
+      "h": 677,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 24,
+      "y": 0,
+      "w": 12,
+      "h": 674,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 36,
+      "y": 0,
+      "w": 12,
+      "h": 671,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 48,
+      "y": 0,
+      "w": 12,
+      "h": 659,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 60,
+      "y": 0,
+      "w": 12,
+      "h": 647,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 72,
+      "y": 0,
+      "w": 12,
+      "h": 653,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 84,
+      "y": 0,
+      "w": 12,
+      "h": 653,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 96,
+      "y": 0,
+      "w": 12,
+      "h": 653,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 108,
+      "y": 0,
+      "w": 12,
+      "h": 650,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 120,
+      "y": 0,
+      "w": 12,
+      "h": 641,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 132,
+      "y": 0,
+      "w": 12,
+      "h": 641,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 144,
+      "y": 0,
+      "w": 12,
+      "h": 647,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 156,
+      "y": 0,
+      "w": 12,
+      "h": 650,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 168,
+      "y": 0,
+      "w": 12,
+      "h": 650,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 180,
+      "y": 0,
+      "w": 12,
+      "h": 644,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 192,
+      "y": 0,
+      "w": 12,
+      "h": 638,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 204,
+      "y": 0,
+      "w": 12,
+      "h": 617,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 216,
+      "y": 0,
+      "w": 12,
+      "h": 548,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 228,
+      "y": 0,
+      "w": 12,
+      "h": 569,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 240,
+      "y": 0,
+      "w": 12,
+      "h": 587,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 252,
+      "y": 0,
+      "w": 12,
+      "h": 593,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 264,
+      "y": 0,
+      "w": 12,
+      "h": 593,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 276,
+      "y": 0,
+      "w": 12,
+      "h": 593,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 288,
+      "y": 0,
+      "w": 12,
+      "h": 590,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 300,
+      "y": 0,
+      "w": 12,
+      "h": 578,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 312,
+      "y": 0,
+      "w": 12,
+      "h": 551,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 324,
+      "y": 0,
+      "w": 12,
+      "h": 494,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 336,
+      "y": 0,
+      "w": 12,
+      "h": 488,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 348,
+      "y": 0,
+      "w": 12,
+      "h": 467,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 360,
+      "y": 0,
+      "w": 12,
+      "h": 512,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 372,
+      "y": 0,
+      "w": 12,
+      "h": 524,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 384,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 396,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 408,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 420,
+      "y": 0,
+      "w": 12,
+      "h": 524,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 432,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 444,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 456,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 468,
+      "y": 0,
+      "w": 12,
+      "h": 524,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 480,
+      "y": 0,
+      "w": 12,
+      "h": 521,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 492,
+      "y": 0,
+      "w": 12,
+      "h": 518,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 504,
+      "y": 0,
+      "w": 12,
+      "h": 527,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 516,
+      "y": 0,
+      "w": 12,
+      "h": 530,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 528,
+      "y": 0,
+      "w": 12,
+      "h": 530,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 540,
+      "y": 0,
+      "w": 12,
+      "h": 530,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 552,
+      "y": 0,
+      "w": 12,
+      "h": 533,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 564,
+      "y": 0,
+      "w": 12,
+      "h": 536,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 576,
+      "y": 0,
+      "w": 12,
+      "h": 533,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 588,
+      "y": 0,
+      "w": 12,
+      "h": 533,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 600,
+      "y": 0,
+      "w": 12,
+      "h": 521,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 612,
+      "y": 0,
+      "w": 12,
+      "h": 497,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 624,
+      "y": 0,
+      "w": 12,
+      "h": 491,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 636,
+      "y": 0,
+      "w": 12,
+      "h": 509,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 648,
+      "y": 0,
+      "w": 12,
+      "h": 536,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 660,
+      "y": 0,
+      "w": 12,
+      "h": 542,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 672,
+      "y": 0,
+      "w": 1,
+      "h": 545,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 775,
+      "y": 0,
+      "w": 5,
+      "h": 548,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 780,
+      "y": 0,
+      "w": 12,
+      "h": 545,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 792,
+      "y": 0,
+      "w": 12,
+      "h": 521,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 804,
+      "y": 0,
+      "w": 12,
+      "h": 497,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 816,
+      "y": 0,
+      "w": 12,
+      "h": 485,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 828,
+      "y": 0,
+      "w": 12,
+      "h": 491,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 840,
+      "y": 0,
+      "w": 12,
+      "h": 497,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 852,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 864,
+      "y": 0,
+      "w": 12,
+      "h": 503,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 876,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 888,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 900,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 912,
+      "y": 0,
+      "w": 12,
+      "h": 491,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 924,
+      "y": 0,
+      "w": 12,
+      "h": 485,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 936,
+      "y": 0,
+      "w": 12,
+      "h": 494,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 948,
+      "y": 0,
+      "w": 12,
+      "h": 503,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 960,
+      "y": 0,
+      "w": 12,
+      "h": 509,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 972,
+      "y": 0,
+      "w": 12,
+      "h": 512,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 984,
+      "y": 0,
+      "w": 12,
+      "h": 515,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 996,
+      "y": 0,
+      "w": 12,
+      "h": 509,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1008,
+      "y": 0,
+      "w": 12,
+      "h": 503,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1020,
+      "y": 0,
+      "w": 12,
+      "h": 491,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1032,
+      "y": 0,
+      "w": 12,
+      "h": 494,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1044,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1056,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1068,
+      "y": 0,
+      "w": 12,
+      "h": 497,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1080,
+      "y": 0,
+      "w": 12,
+      "h": 500,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1092,
+      "y": 0,
+      "w": 12,
+      "h": 536,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1104,
+      "y": 0,
+      "w": 12,
+      "h": 548,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1116,
+      "y": 0,
+      "w": 12,
+      "h": 554,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1128,
+      "y": 0,
+      "w": 12,
+      "h": 554,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1140,
+      "y": 0,
+      "w": 12,
+      "h": 557,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1152,
+      "y": 0,
+      "w": 12,
+      "h": 554,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1164,
+      "y": 0,
+      "w": 12,
+      "h": 551,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1176,
+      "y": 0,
+      "w": 12,
+      "h": 551,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1188,
+      "y": 0,
+      "w": 12,
+      "h": 563,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1200,
+      "y": 0,
+      "w": 12,
+      "h": 563,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1212,
+      "y": 0,
+      "w": 12,
+      "h": 566,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1224,
+      "y": 0,
+      "w": 12,
+      "h": 590,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1236,
+      "y": 0,
+      "w": 12,
+      "h": 614,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1248,
+      "y": 0,
+      "w": 12,
+      "h": 635,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1260,
+      "y": 0,
+      "w": 12,
+      "h": 641,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1272,
+      "y": 0,
+      "w": 12,
+      "h": 647,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1284,
+      "y": 0,
+      "w": 12,
+      "h": 653,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1296,
+      "y": 0,
+      "w": 12,
+      "h": 653,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1308,
+      "y": 0,
+      "w": 12,
+      "h": 647,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1320,
+      "y": 0,
+      "w": 12,
+      "h": 641,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1332,
+      "y": 0,
+      "w": 12,
+      "h": 626,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1344,
+      "y": 0,
+      "w": 12,
+      "h": 590,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1356,
+      "y": 0,
+      "w": 12,
+      "h": 629,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1368,
+      "y": 0,
+      "w": 12,
+      "h": 635,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1380,
+      "y": 0,
+      "w": 12,
+      "h": 641,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1392,
+      "y": 0,
+      "w": 12,
+      "h": 644,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1404,
+      "y": 0,
+      "w": 12,
+      "h": 644,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1416,
+      "y": 0,
+      "w": 12,
+      "h": 644,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1428,
+      "y": 0,
+      "w": 12,
+      "h": 638,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 1440,
+      "y": 0,
+      "w": 8,
+      "h": 632,
+      "note": "the cloud wall"
+    },
+    {
+      "x": 581,
+      "y": 380,
+      "w": 92,
+      "h": 264,
+      "note": "arch west pillar"
+    },
+    {
+      "x": 775,
+      "y": 380,
+      "w": 92,
+      "h": 264,
+      "note": "arch east pillar"
+    },
+    {
+      "x": 673,
+      "y": 0,
+      "w": 102,
+      "h": 556,
+      "note": "inside the arch: only the enter zone leads on"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 0,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 24,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 24,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 48,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 48,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 72,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 72,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 96,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 96,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 120,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 120,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 144,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 144,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 168,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 168,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 192,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 192,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 216,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 216,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 240,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 240,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 264,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 264,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 288,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 288,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 312,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 312,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 336,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 336,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 360,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 360,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 384,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 384,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 408,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 408,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 432,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 432,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 456,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 456,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 480,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 480,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 504,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 504,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 528,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 528,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 552,
+      "w": 330,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1116,
+      "y": 552,
+      "w": 332,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 576,
+      "w": 328,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1118,
+      "y": 576,
+      "w": 330,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 600,
+      "w": 325,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1119,
+      "y": 600,
+      "w": 329,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 624,
+      "w": 322,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1122,
+      "y": 624,
+      "w": 326,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 648,
+      "w": 319,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1123,
+      "y": 648,
+      "w": 325,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 672,
+      "w": 318,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1124,
+      "y": 672,
+      "w": 324,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 696,
+      "w": 317,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1125,
+      "y": 696,
+      "w": 323,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 720,
+      "w": 313,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1129,
+      "y": 720,
+      "w": 319,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 744,
+      "w": 307,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1135,
+      "y": 744,
+      "w": 313,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 768,
+      "w": 302,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1140,
+      "y": 768,
+      "w": 308,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 792,
+      "w": 300,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1144,
+      "y": 792,
+      "w": 304,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 816,
+      "w": 299,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1146,
+      "y": 816,
+      "w": 302,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 840,
+      "w": 296,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1148,
+      "y": 840,
+      "w": 300,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 864,
+      "w": 292,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1153,
+      "y": 864,
+      "w": 295,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 888,
+      "w": 288,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1159,
+      "y": 888,
+      "w": 289,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 912,
+      "w": 285,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1164,
+      "y": 912,
+      "w": 284,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 936,
+      "w": 284,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1169,
+      "y": 936,
+      "w": 279,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 960,
+      "w": 284,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1170,
+      "y": 960,
+      "w": 278,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 984,
+      "w": 285,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1170,
+      "y": 984,
+      "w": 278,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1008,
+      "w": 288,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1168,
+      "y": 1008,
+      "w": 280,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1032,
+      "w": 292,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1164,
+      "y": 1032,
+      "w": 284,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1056,
+      "w": 296,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1159,
+      "y": 1056,
+      "w": 289,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1080,
+      "w": 299,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1154,
+      "y": 1080,
+      "w": 294,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1104,
+      "w": 300,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1151,
+      "y": 1104,
+      "w": 297,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1128,
+      "w": 308,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1149,
+      "y": 1128,
+      "w": 299,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1152,
+      "w": 324,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1136,
+      "y": 1152,
+      "w": 312,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1176,
+      "w": 342,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1114,
+      "y": 1176,
+      "w": 334,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1200,
+      "w": 356,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1093,
+      "y": 1200,
+      "w": 355,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1224,
+      "w": 360,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1081,
+      "y": 1224,
+      "w": 367,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1248,
+      "w": 373,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1073,
+      "y": 1248,
+      "w": 375,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1272,
+      "w": 397,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1050,
+      "y": 1272,
+      "w": 398,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1296,
+      "w": 422,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1021,
+      "y": 1296,
+      "w": 427,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1320,
+      "w": 438,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 1002,
+      "y": 1320,
+      "w": 446,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1344,
+      "w": 442,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 998,
+      "y": 1344,
+      "w": 450,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1368,
+      "w": 452,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 987,
+      "y": 1368,
+      "w": 461,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1392,
+      "w": 463,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 974,
+      "y": 1392,
+      "w": 474,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1416,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 966,
+      "y": 1416,
+      "w": 482,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1440,
+      "w": 471,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 965,
+      "y": 1440,
+      "w": 483,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1464,
+      "w": 475,
+      "h": 24,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 963,
+      "y": 1464,
+      "w": 485,
+      "h": 24,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1488,
+      "w": 478,
+      "h": 12,
+      "note": "west belt (rubble and ash dunes)"
+    },
+    {
+      "x": 960,
+      "y": 1488,
+      "w": 488,
+      "h": 12,
+      "note": "east belt (rubble and ash dunes)"
+    },
+    {
+      "x": 0,
+      "y": 1486,
+      "w": 1448,
+      "h": 14,
+      "note": "south edge (the road back)"
+    },
+    {
+      "x": 279,
+      "y": 581,
+      "w": 84,
+      "h": 98,
+      "note": "west belt deadcard"
+    },
+    {
+      "x": 280,
+      "y": 680,
+      "w": 83,
+      "h": 52,
+      "note": "west belt carDark"
+    },
+    {
+      "x": 259,
+      "y": 700,
+      "w": 77,
+      "h": 90,
+      "note": "west belt deadcard"
+    },
+    {
+      "x": 267,
+      "y": 770,
+      "w": 52,
+      "h": 57,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 274,
+      "y": 823,
+      "w": 65,
+      "h": 70,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 244,
+      "y": 834,
+      "w": 77,
+      "h": 90,
+      "note": "west belt deadcard"
+    },
+    {
+      "x": 254,
+      "y": 894,
+      "w": 60,
+      "h": 66,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 258,
+      "y": 955,
+      "w": 52,
+      "h": 57,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 259,
+      "y": 995,
+      "w": 60,
+      "h": 66,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 280,
+      "y": 1046,
+      "w": 48,
+      "h": 61,
+      "note": "west belt rubbleL"
+    },
+    {
+      "x": 289,
+      "y": 1109,
+      "w": 51,
+      "h": 68,
+      "note": "west belt deadB"
+    },
+    {
+      "x": 280,
+      "y": 1179,
+      "w": 65,
+      "h": 70,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 408,
+      "y": 1264,
+      "w": 56,
+      "h": 61,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 429,
+      "y": 1310,
+      "w": 59,
+      "h": 77,
+      "note": "west belt rubbleL"
+    },
+    {
+      "x": 387,
+      "y": 1290,
+      "w": 47,
+      "h": 80,
+      "note": "west belt deadE"
+    },
+    {
+      "x": 412,
+      "y": 1346,
+      "w": 97,
+      "h": 62,
+      "note": "west belt carDark"
+    },
+    {
+      "x": 423,
+      "y": 1391,
+      "w": 83,
+      "h": 52,
+      "note": "west belt carDark"
+    },
+    {
+      "x": 450,
+      "y": 1423,
+      "w": 65,
+      "h": 70,
+      "note": "west belt rubbleE"
+    },
+    {
+      "x": 460,
+      "y": 1463,
+      "w": 48,
+      "h": 37,
+      "note": "west belt rubbleL"
+    },
+    {
+      "x": 443,
+      "y": 1497,
+      "w": 65,
+      "h": 3,
+      "note": "west belt deadB"
+    },
+    {
+      "x": 1098,
+      "y": 602,
+      "w": 24,
+      "h": 44,
+      "note": "east belt deadS"
+    },
+    {
+      "x": 1082,
+      "y": 602,
+      "w": 59,
+      "h": 77,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1112,
+      "y": 684,
+      "w": 24,
+      "h": 44,
+      "note": "east belt deadS"
+    },
+    {
+      "x": 1099,
+      "y": 690,
+      "w": 63,
+      "h": 82,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1133,
+      "y": 764,
+      "w": 22,
+      "h": 39,
+      "note": "east belt deadS"
+    },
+    {
+      "x": 1093,
+      "y": 790,
+      "w": 105,
+      "h": 66,
+      "note": "east belt carDark"
+    },
+    {
+      "x": 1123,
+      "y": 794,
+      "w": 63,
+      "h": 82,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1105,
+      "y": 866,
+      "w": 77,
+      "h": 49,
+      "note": "east belt carDark"
+    },
+    {
+      "x": 1144,
+      "y": 916,
+      "w": 48,
+      "h": 61,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1141,
+      "y": 931,
+      "w": 52,
+      "h": 77,
+      "note": "east belt deadA"
+    },
+    {
+      "x": 1146,
+      "y": 984,
+      "w": 59,
+      "h": 77,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1123,
+      "y": 1027,
+      "w": 56,
+      "h": 84,
+      "note": "east belt deadA"
+    },
+    {
+      "x": 1051,
+      "y": 1210,
+      "w": 58,
+      "h": 68,
+      "note": "east belt deadcard"
+    },
+    {
+      "x": 993,
+      "y": 1249,
+      "w": 60,
+      "h": 81,
+      "note": "east belt deadB"
+    },
+    {
+      "x": 1006,
+      "y": 1302,
+      "w": 72,
+      "h": 83,
+      "note": "east belt deadcard"
+    },
+    {
+      "x": 960,
+      "y": 1433,
+      "w": 32,
+      "h": 56,
+      "note": "east belt deadS"
+    },
+    {
+      "x": 928,
+      "y": 1450,
+      "w": 43,
+      "h": 50,
+      "note": "east belt deadE"
+    },
+    {
+      "x": 827,
+      "y": 1150,
+      "w": 83,
+      "h": 52,
+      "note": "wreck on the highway shoulder"
+    },
+    {
+      "x": 568,
+      "y": 1054,
+      "w": 96,
+      "h": 55,
+      "note": "wreck on the highway shoulder"
+    },
+    {
+      "x": 833,
+      "y": 1007,
+      "w": 59,
+      "h": 36,
+      "note": "highway barrier"
+    },
+    {
+      "x": 602,
+      "y": 927,
+      "w": 52,
+      "h": 32,
+      "note": "highway barrier"
+    },
+    {
+      "x": 602,
+      "y": 1285,
+      "w": 46,
+      "h": 26,
+      "note": "old checkpoint barricade"
+    },
+    {
+      "x": 802,
+      "y": 1306,
+      "w": 41,
+      "h": 23,
+      "note": "old checkpoint barricade"
+    },
+    {
+      "x": 833,
+      "y": 1390,
+      "w": 88,
+      "h": 58,
+      "note": "abandoned van"
+    },
+    {
+      "x": 640,
+      "y": 844,
+      "w": 18,
+      "h": 48,
+      "note": "pilgrim banner"
+    },
+    {
+      "x": 793,
+      "y": 832,
+      "w": 18,
+      "h": 48,
+      "note": "pilgrim banner"
+    },
+    {
+      "x": 646,
+      "y": 688,
+      "w": 21,
+      "h": 24,
+      "note": "pilgrim cairn"
+    },
+    {
+      "x": 784,
+      "y": 702,
+      "w": 21,
+      "h": 24,
+      "note": "pilgrim cairn"
+    },
+    {
+      "x": 630,
+      "y": 752,
+      "w": 18,
+      "h": 48,
+      "note": "pilgrim banner"
+    },
+    {
+      "x": 801,
+      "y": 758,
+      "w": 18,
+      "h": 48,
+      "note": "pilgrim banner"
+    },
+    {
+      "x": 404,
+      "y": 926,
+      "w": 84,
+      "h": 66,
+      "note": "pilgrim tent"
+    },
+    {
+      "x": 510,
+      "y": 907,
+      "w": 66,
+      "h": 51,
+      "note": "collapsed pilgrim tent"
+    },
+    {
+      "x": 480,
+      "y": 987,
+      "w": 40,
+      "h": 45,
+      "note": "burnt-out camp fire"
+    },
+    {
+      "x": 353,
+      "y": 987,
+      "w": 34,
+      "h": 37,
+      "note": "pilgrim crates"
+    },
+    {
+      "x": 440,
+      "y": 1034,
+      "w": 21,
+      "h": 9,
+      "note": "bedroll"
+    },
+    {
+      "x": 532,
+      "y": 1007,
+      "w": 12,
+      "h": 15,
+      "note": "abandoned pack"
+    },
+    {
+      "x": 406,
+      "y": 1045,
+      "w": 12,
+      "h": 15,
+      "note": "abandoned pack"
+    },
+    {
+      "x": 559,
+      "y": 1006,
+      "w": 30,
+      "h": 37,
+      "note": "bleached bones"
+    },
+    {
+      "x": 584,
+      "y": 932,
+      "w": 18,
+      "h": 48,
+      "note": "camp banner"
+    },
+    {
+      "x": 364,
+      "y": 936,
+      "w": 29,
+      "h": 28,
+      "note": "water barrels"
+    },
+    {
+      "x": 1014,
+      "y": 802,
+      "w": 93,
+      "h": 72,
+      "note": "pilgrim van wreck"
+    },
+    {
+      "x": 932,
+      "y": 821,
+      "w": 60,
+      "h": 51,
+      "note": "pilgrim tent"
+    },
+    {
+      "x": 981,
+      "y": 881,
+      "w": 35,
+      "h": 39,
+      "note": "burnt-out camp fire"
+    },
+    {
+      "x": 930,
+      "y": 907,
+      "w": 12,
+      "h": 15,
+      "note": "abandoned pack"
+    },
+    {
+      "x": 1020,
+      "y": 942,
+      "w": 21,
+      "h": 9,
+      "note": "bedroll"
+    },
+    {
+      "x": 1081,
+      "y": 906,
+      "w": 30,
+      "h": 37,
+      "note": "bleached bones"
+    },
+    {
+      "x": 1108,
+      "y": 887,
+      "w": 31,
+      "h": 34,
+      "note": "pilgrim crates"
+    },
+    {
+      "x": 466,
+      "y": 1212,
+      "w": 82,
+      "h": 51,
+      "note": "pilgrim car wreck"
+    },
+    {
+      "x": 577,
+      "y": 1193,
+      "w": 60,
+      "h": 51,
+      "note": "pilgrim tent"
+    },
+    {
+      "x": 575,
+      "y": 1251,
+      "w": 35,
+      "h": 39,
+      "note": "burnt-out camp fire"
+    },
+    {
+      "x": 544,
+      "y": 1297,
+      "w": 12,
+      "h": 15,
+      "note": "abandoned pack"
+    },
+    {
+      "x": 464,
+      "y": 1278,
+      "w": 25,
+      "h": 30,
+      "note": "bleached bones"
+    },
+    {
+      "x": 928,
+      "y": 1074,
+      "w": 25,
+      "h": 30,
+      "note": "bleached bones"
+    },
+    {
+      "x": 427,
+      "y": 1305,
+      "w": 49,
+      "h": 56,
+      "note": "rocks"
+    },
+    {
+      "x": 988,
+      "y": 1236,
+      "w": 34,
+      "h": 61,
+      "note": "dead sapling"
+    },
+    {
+      "x": 416,
+      "y": 801,
+      "w": 32,
+      "h": 56,
+      "note": "dead sapling"
+    },
+    {
+      "x": 1036,
+      "y": 736,
+      "w": 21,
+      "h": 24,
+      "note": "pilgrim cairn"
+    },
+    {
+      "x": 427,
+      "y": 671,
+      "w": 49,
+      "h": 56,
+      "note": "rocks"
+    },
+    {
+      "x": 548,
+      "y": 724,
+      "w": 25,
+      "h": 30,
+      "note": "bleached bones"
+    },
+    {
+      "x": 899,
+      "y": 639,
+      "w": 66,
+      "h": 51,
+      "note": "collapsed pilgrim tent"
+    },
+    {
+      "x": 960,
+      "y": 701,
+      "w": 12,
+      "h": 15,
+      "note": "abandoned pack"
+    },
+    {
+      "x": 510,
+      "y": 648,
+      "w": 21,
+      "h": 24,
+      "note": "pilgrim cairn"
+    },
+    {
+      "x": 576,
+      "y": 676,
+      "w": 21,
+      "h": 24,
+      "note": "pilgrim cairn"
+    },
+    {
+      "x": 442,
+      "y": 778,
+      "w": 21,
+      "h": 9,
+      "note": "bedroll"
+    },
+    {
+      "x": 868,
+      "y": 712,
+      "w": 18,
+      "h": 48,
+      "note": "fallen pilgrim banner"
+    },
+    {
+      "x": 990,
+      "y": 790,
+      "w": 20,
+      "h": 25,
+      "note": "bleached bones"
+    },
+    {
+      "x": 363,
+      "y": 641,
+      "w": 80,
+      "h": 46,
+      "note": "pilgrim car wreck"
+    }
+  ],
+  "occluders": [],
+  "npcs": [],
+  "pickups": [
+    {
+      "id": "gt-water-1",
+      "item": "water",
+      "x": 526,
+      "y": 1086,
+      "dialogue": null
+    },
+    {
+      "id": "gt-ration-1",
+      "item": "ration",
+      "x": 968,
+      "y": 972,
+      "dialogue": null
+    }
+  ],
+  "inspectables": [
+    {
+      "id": "arch",
+      "x": 589,
+      "y": 484,
+      "w": 270,
+      "h": 158,
+      "dialogue": "inspect-arch"
+    },
+    {
+      "id": "cloudwall",
+      "x": 988,
+      "y": 487,
+      "w": 72,
+      "h": 30,
+      "dialogue": "inspect-cloudwall"
+    },
+    {
+      "id": "pilgrims",
+      "x": 404,
+      "y": 907,
+      "w": 172,
+      "h": 125,
+      "dialogue": "inspect-pilgrims"
+    }
+  ],
+  "zones": [
+    {
+      "id": "approach",
+      "x": 269,
+      "y": 786,
+      "w": 907,
+      "h": 44
+    },
+    {
+      "id": "enter",
+      "x": 679,
+      "y": 554,
+      "w": 90,
+      "h": 28
+    }
+  ],
+  "hazards": [
+    {
+      "type": "toxic",
+      "x": 375,
+      "y": 1179,
+      "w": 58,
+      "h": 34
+    },
+    {
+      "type": "toxic",
+      "x": 900,
+      "y": 1354,
+      "w": 48,
+      "h": 28
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "gt-cp-1",
+      "x": 640,
+      "y": 1396,
+      "w": 104,
+      "h": 70,
+      "respawn": {
+        "x": 692,
+        "y": 1438
+      }
+    }
+  ],
+  "drones": [],
+  "crawlers": [
+    {
+      "id": "gt-c1",
+      "x": 1064,
+      "y": 1136,
+      "count": 2,
+      "radius": 46
+    }
+  ],
+  "points": {
+    "party-halt": {
+      "x": 724,
+      "y": 750
+    },
+    "eli-enter": {
+      "x": 724,
+      "y": 568
+    },
+    "eli-collapse": {
+      "x": 724,
+      "y": 652
+    }
+  },
+  "markers": {
+    "gate": {
+      "x": 724,
+      "y": 568
+    },
+    "eli_falls": {
+      "x": 724,
+      "y": 568
+    }
+  }
+}

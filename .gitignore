@@ -1,0 +1,13 @@
+# Dependencies (reinstall with: npm install)
+node_modules/
+
+# Build output (rebuild with: npm run build)
+dist/
+
+# Debug preview images written by tools/assets/*.mjs (regenerate with: npm run assets)
+tools/previews/
+
+# OS / editor clutter
+.DS_Store
+*.log
+.vscode/

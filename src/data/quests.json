@@ -1,0 +1,101 @@
+{
+  "start": "wake",
+  "stages": {
+    "wake": {
+      "title": "ACT I · THE RULE",
+      "objective": "You can't sleep. Find Mayor Orrin."
+    },
+    "explore": {
+      "title": "ACT I · TOBIN'S TRAIL",
+      "objective": "Find what Tobin left behind ({artifacts})"
+    },
+    "confront": {
+      "title": "ACT I · THE MAYOR",
+      "objective": "Show Mayor Orrin what you found."
+    },
+    "bridge": {
+      "title": "ACT I · THE OLD BRIDGE",
+      "objective": "Slip past the barrier at the old bridge as it flickers."
+    },
+    "crossed": {
+      "title": "ACT II · THE OUTSKIRTS",
+      "objective": "Follow the shard's hum south."
+    },
+    "outskirts": {
+      "title": "ACT II · FIELD STATION",
+      "objective": "Follow the hum south. Stay out of the drones' light."
+    },
+    "satchel": {
+      "title": "ACT II · THE SATCHEL",
+      "objective": "Fish Mira's satchel out of the toxic pools."
+    },
+    "to_city": {
+      "title": "ACT II · ROAD SOUTH",
+      "objective": "Head south with Mira to the ruined city."
+    },
+    "city": {
+      "title": "ACT III · THE RUINS",
+      "objective": "Someone is fighting in the ruins. Find them."
+    },
+    "fight": {
+      "title": "ACT III · AMBUSH",
+      "objective": "Help the fighter! [SPACE] to strike."
+    },
+    "survivors": {
+      "title": "ACT III · SURVIVORS",
+      "objective": "Find the others hiding in the ruins ({party})"
+    },
+    "signal": {
+      "title": "ACT III · THE SIGNAL",
+      "objective": "Bring everyone to Ryn's rig and tune the signal."
+    },
+    "cloud": {
+      "title": "ACT III · DUE EAST",
+      "objective": "Follow the signal east, toward the wall of white."
+    },
+    "gate": {
+      "title": "ACT IV · THE GATE",
+      "objective": "Cross the ash plain to the wall of white."
+    },
+    "eli_scouts": {
+      "title": "ACT IV · THE SCOUT",
+      "objective": "Wait for Eli."
+    },
+    "eli_falls": {
+      "title": "ACT IV · NO PARADISE",
+      "objective": "Go through the arch anyway. For Eli."
+    },
+    "hollow": {
+      "title": "ACT IV · THE HOLLOW",
+      "objective": "Search the dead city for a way down."
+    },
+    "silo": {
+      "title": "ACT V · SILO 01",
+      "objective": "Find whoever is in charge down here."
+    },
+    "archives": {
+      "title": "ACT V · THE ARCHIVES",
+      "objective": "Read the archive terminals ({n:archive_/3})"
+    },
+    "remember": {
+      "title": "ACT V · REMEMBER",
+      "objective": "Go to the memory chamber with Dr. Hale."
+    },
+    "beacon": {
+      "title": "ACT VI · THE BEACON",
+      "objective": "The swarm is coming. Reach the AEGIS core."
+    },
+    "destroy": {
+      "title": "ACT VI · THE FURNACE",
+      "objective": "Carry the artifacts to the reactor furnace."
+    },
+    "relays": {
+      "title": "ACT VI · HOLD THE LINE",
+      "objective": "Hold the three relays ({n:relay_/3})"
+    },
+    "reprogram": {
+      "title": "ACT VI · REWRITE",
+      "objective": "Return to the core and rewrite the signal."
+    }
+  }
+}

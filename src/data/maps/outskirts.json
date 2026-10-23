@@ -1,0 +1,1962 @@
+{
+  "image": "map-outskirts",
+  "width": 1448,
+  "height": 1640,
+  "area": "The Outskirts",
+  "spawn": {
+    "x": 841,
+    "y": 222,
+    "facing": "down"
+  },
+  "colliders": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 1448,
+      "h": 46,
+      "note": "village interior (behind the fence)"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 132,
+      "note": "SW gate tower"
+    },
+    {
+      "x": 125,
+      "y": 46,
+      "w": 547,
+      "h": 80,
+      "note": "south fence (west)"
+    },
+    {
+      "x": 668,
+      "y": 30,
+      "w": 75,
+      "h": 132,
+      "note": "south gate tower W"
+    },
+    {
+      "x": 940,
+      "y": 30,
+      "w": 73,
+      "h": 132,
+      "note": "south gate tower E"
+    },
+    {
+      "x": 743,
+      "y": 46,
+      "w": 197,
+      "h": 90,
+      "note": "village gate, sealed behind you"
+    },
+    {
+      "x": 1010,
+      "y": 86,
+      "w": 312,
+      "h": 72,
+      "note": "south fence (east)"
+    },
+    {
+      "x": 1318,
+      "y": 30,
+      "w": 82,
+      "h": 146,
+      "note": "SE gate tower"
+    },
+    {
+      "x": 1395,
+      "y": 32,
+      "w": 53,
+      "h": 123,
+      "note": "south fence (far east)"
+    },
+    {
+      "x": 0,
+      "y": 124,
+      "w": 789,
+      "h": 182,
+      "note": "cliff + river west of bridge (incl. left rail)"
+    },
+    {
+      "x": 893,
+      "y": 134,
+      "w": 555,
+      "h": 172,
+      "note": "cliff + river east of bridge (incl. right rail)"
+    },
+    {
+      "x": 0,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 48,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 96,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 144,
+      "y": 306,
+      "w": 48,
+      "h": 17,
+      "note": "river (south part)"
+    },
+    {
+      "x": 192,
+      "y": 306,
+      "w": 48,
+      "h": 19,
+      "note": "river (south part)"
+    },
+    {
+      "x": 240,
+      "y": 306,
+      "w": 48,
+      "h": 23,
+      "note": "river (south part)"
+    },
+    {
+      "x": 288,
+      "y": 306,
+      "w": 48,
+      "h": 23,
+      "note": "river (south part)"
+    },
+    {
+      "x": 336,
+      "y": 306,
+      "w": 48,
+      "h": 23,
+      "note": "river (south part)"
+    },
+    {
+      "x": 384,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 432,
+      "y": 306,
+      "w": 48,
+      "h": 19,
+      "note": "river (south part)"
+    },
+    {
+      "x": 480,
+      "y": 306,
+      "w": 48,
+      "h": 21,
+      "note": "river (south part)"
+    },
+    {
+      "x": 528,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 576,
+      "y": 306,
+      "w": 48,
+      "h": 22,
+      "note": "river (south part)"
+    },
+    {
+      "x": 624,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 672,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 720,
+      "y": 306,
+      "w": 48,
+      "h": 23,
+      "note": "river (south part)"
+    },
+    {
+      "x": 768,
+      "y": 306,
+      "w": 21,
+      "h": 19,
+      "note": "river (south part)"
+    },
+    {
+      "x": 893,
+      "y": 306,
+      "w": 19,
+      "h": 21,
+      "note": "river (south part)"
+    },
+    {
+      "x": 912,
+      "y": 306,
+      "w": 48,
+      "h": 21,
+      "note": "river (south part)"
+    },
+    {
+      "x": 960,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1008,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1056,
+      "y": 306,
+      "w": 48,
+      "h": 18,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1104,
+      "y": 306,
+      "w": 48,
+      "h": 18,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1152,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1200,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1248,
+      "y": 306,
+      "w": 48,
+      "h": 15,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1296,
+      "y": 306,
+      "w": 48,
+      "h": 20,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1344,
+      "y": 306,
+      "w": 48,
+      "h": 21,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1392,
+      "y": 306,
+      "w": 48,
+      "h": 21,
+      "note": "river (south part)"
+    },
+    {
+      "x": 1440,
+      "y": 306,
+      "w": 8,
+      "h": 21,
+      "note": "river (south part)"
+    },
+    {
+      "x": 0,
+      "y": 306,
+      "w": 550,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1150,
+      "y": 306,
+      "w": 298,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 330,
+      "w": 531,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1169,
+      "y": 330,
+      "w": 279,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 354,
+      "w": 520,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1180,
+      "y": 354,
+      "w": 268,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 378,
+      "w": 516,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1180,
+      "y": 378,
+      "w": 268,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 402,
+      "w": 504,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1179,
+      "y": 402,
+      "w": 269,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 426,
+      "w": 489,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1177,
+      "y": 426,
+      "w": 271,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 450,
+      "w": 476,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1174,
+      "y": 450,
+      "w": 274,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 474,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1171,
+      "y": 474,
+      "w": 277,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 498,
+      "w": 468,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1170,
+      "y": 498,
+      "w": 278,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 522,
+      "w": 464,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1166,
+      "y": 522,
+      "w": 282,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 546,
+      "w": 459,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1157,
+      "y": 546,
+      "w": 291,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 570,
+      "w": 454,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1145,
+      "y": 570,
+      "w": 303,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 594,
+      "w": 452,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1135,
+      "y": 594,
+      "w": 313,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 618,
+      "w": 452,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1130,
+      "y": 618,
+      "w": 318,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 642,
+      "w": 453,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1129,
+      "y": 642,
+      "w": 319,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 666,
+      "w": 457,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1127,
+      "y": 666,
+      "w": 321,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 690,
+      "w": 461,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1125,
+      "y": 690,
+      "w": 323,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 714,
+      "w": 465,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1123,
+      "y": 714,
+      "w": 325,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 738,
+      "w": 469,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1121,
+      "y": 738,
+      "w": 327,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 762,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1125,
+      "y": 762,
+      "w": 323,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 786,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1135,
+      "y": 786,
+      "w": 313,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 810,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1147,
+      "y": 810,
+      "w": 301,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 834,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1156,
+      "y": 834,
+      "w": 292,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 858,
+      "w": 470,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1160,
+      "y": 858,
+      "w": 288,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 882,
+      "w": 465,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1162,
+      "y": 882,
+      "w": 286,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 906,
+      "w": 455,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1165,
+      "y": 906,
+      "w": 283,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 930,
+      "w": 445,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1168,
+      "y": 930,
+      "w": 280,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 954,
+      "w": 440,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1170,
+      "y": 954,
+      "w": 278,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 978,
+      "w": 439,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1170,
+      "y": 978,
+      "w": 278,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1002,
+      "w": 437,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1168,
+      "y": 1002,
+      "w": 280,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1026,
+      "w": 434,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1163,
+      "y": 1026,
+      "w": 285,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1050,
+      "w": 431,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1158,
+      "y": 1050,
+      "w": 290,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1074,
+      "w": 430,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1152,
+      "y": 1074,
+      "w": 296,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1098,
+      "w": 430,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1150,
+      "y": 1098,
+      "w": 298,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1122,
+      "w": 431,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1135,
+      "y": 1122,
+      "w": 313,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1146,
+      "w": 434,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1097,
+      "y": 1146,
+      "w": 351,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1170,
+      "w": 438,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1056,
+      "y": 1170,
+      "w": 392,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1194,
+      "w": 440,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1031,
+      "y": 1194,
+      "w": 417,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1218,
+      "w": 444,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 1021,
+      "y": 1218,
+      "w": 427,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1242,
+      "w": 457,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 988,
+      "y": 1242,
+      "w": 460,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1266,
+      "w": 474,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 944,
+      "y": 1266,
+      "w": 504,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1290,
+      "w": 491,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 903,
+      "y": 1290,
+      "w": 545,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1314,
+      "w": 500,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 881,
+      "y": 1314,
+      "w": 567,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1338,
+      "w": 504,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 871,
+      "y": 1338,
+      "w": 577,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1362,
+      "w": 520,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 838,
+      "y": 1362,
+      "w": 610,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1386,
+      "w": 539,
+      "h": 24,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 797,
+      "y": 1386,
+      "w": 651,
+      "h": 24,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1410,
+      "w": 555,
+      "h": 20,
+      "note": "west belt (dead forest / rubble)"
+    },
+    {
+      "x": 763,
+      "y": 1410,
+      "w": 685,
+      "h": 20,
+      "note": "east belt (dead forest / rubble)"
+    },
+    {
+      "x": 0,
+      "y": 1430,
+      "w": 590,
+      "h": 210,
+      "note": "city ruins west of the road"
+    },
+    {
+      "x": 724,
+      "y": 1430,
+      "w": 724,
+      "h": 210,
+      "note": "city ruins east of the road"
+    },
+    {
+      "x": 485,
+      "y": 258,
+      "w": 111,
+      "h": 115,
+      "note": "west belt tree"
+    },
+    {
+      "x": 423,
+      "y": 284,
+      "w": 97,
+      "h": 101,
+      "note": "west belt tree"
+    },
+    {
+      "x": 482,
+      "y": 312,
+      "w": 103,
+      "h": 108,
+      "note": "west belt tree"
+    },
+    {
+      "x": 400,
+      "y": 298,
+      "w": 116,
+      "h": 122,
+      "note": "west belt tree"
+    },
+    {
+      "x": 451,
+      "y": 344,
+      "w": 123,
+      "h": 128,
+      "note": "west belt tree"
+    },
+    {
+      "x": 395,
+      "y": 362,
+      "w": 103,
+      "h": 105,
+      "note": "west belt bigtree"
+    },
+    {
+      "x": 435,
+      "y": 376,
+      "w": 117,
+      "h": 118,
+      "note": "west belt bigtree"
+    },
+    {
+      "x": 374,
+      "y": 403,
+      "w": 97,
+      "h": 101,
+      "note": "west belt tree"
+    },
+    {
+      "x": 424,
+      "y": 433,
+      "w": 97,
+      "h": 101,
+      "note": "west belt tree"
+    },
+    {
+      "x": 374,
+      "y": 439,
+      "w": 91,
+      "h": 95,
+      "note": "west belt tree"
+    },
+    {
+      "x": 415,
+      "y": 471,
+      "w": 123,
+      "h": 125,
+      "note": "west belt bigtree"
+    },
+    {
+      "x": 350,
+      "y": 452,
+      "w": 123,
+      "h": 128,
+      "note": "west belt tree"
+    },
+    {
+      "x": 414,
+      "y": 506,
+      "w": 111,
+      "h": 115,
+      "note": "west belt tree"
+    },
+    {
+      "x": 338,
+      "y": 503,
+      "w": 116,
+      "h": 122,
+      "note": "west belt tree"
+    },
+    {
+      "x": 409,
+      "y": 545,
+      "w": 110,
+      "h": 111,
+      "note": "west belt bush"
+    },
+    {
+      "x": 354,
+      "y": 557,
+      "w": 104,
+      "h": 105,
+      "note": "west belt bush"
+    },
+    {
+      "x": 410,
+      "y": 574,
+      "w": 123,
+      "h": 125,
+      "note": "west belt bigtree"
+    },
+    {
+      "x": 422,
+      "y": 642,
+      "w": 91,
+      "h": 95,
+      "note": "west belt tree"
+    },
+    {
+      "x": 369,
+      "y": 645,
+      "w": 87,
+      "h": 88,
+      "note": "west belt bush"
+    },
+    {
+      "x": 405,
+      "y": 648,
+      "w": 123,
+      "h": 128,
+      "note": "west belt tree"
+    },
+    {
+      "x": 367,
+      "y": 678,
+      "w": 90,
+      "h": 105,
+      "note": "west belt deadcard"
+    },
+    {
+      "x": 353,
+      "y": 708,
+      "w": 116,
+      "h": 122,
+      "note": "west belt tree"
+    },
+    {
+      "x": 338,
+      "y": 859,
+      "w": 111,
+      "h": 115,
+      "note": "west belt tree"
+    },
+    {
+      "x": 392,
+      "y": 943,
+      "w": 95,
+      "h": 135,
+      "note": "west belt deadC"
+    },
+    {
+      "x": 384,
+      "y": 967,
+      "w": 89,
+      "h": 131,
+      "note": "west belt deadA"
+    },
+    {
+      "x": 386,
+      "y": 1068,
+      "w": 104,
+      "h": 66,
+      "note": "west belt carDark"
+    },
+    {
+      "x": 398,
+      "y": 1120,
+      "w": 89,
+      "h": 60,
+      "note": "west belt wall2"
+    },
+    {
+      "x": 404,
+      "y": 1169,
+      "w": 81,
+      "h": 50,
+      "note": "west belt rubbleS"
+    },
+    {
+      "x": 424,
+      "y": 1159,
+      "w": 71,
+      "h": 92,
+      "note": "west belt rubbleL"
+    },
+    {
+      "x": 452,
+      "y": 1190,
+      "w": 74,
+      "h": 110,
+      "note": "west belt deadA"
+    },
+    {
+      "x": 389,
+      "y": 1197,
+      "w": 79,
+      "h": 106,
+      "note": "west belt deadB"
+    },
+    {
+      "x": 474,
+      "y": 1229,
+      "w": 70,
+      "h": 117,
+      "note": "west belt deadE"
+    },
+    {
+      "x": 410,
+      "y": 1294,
+      "w": 91,
+      "h": 55,
+      "note": "west belt rubbleS"
+    },
+    {
+      "x": 472,
+      "y": 1257,
+      "w": 79,
+      "h": 112,
+      "note": "west belt deadC"
+    },
+    {
+      "x": 513,
+      "y": 1325,
+      "w": 70,
+      "h": 103,
+      "note": "west belt deadA"
+    },
+    {
+      "x": 442,
+      "y": 1316,
+      "w": 70,
+      "h": 117,
+      "note": "west belt deadE"
+    },
+    {
+      "x": 518,
+      "y": 1400,
+      "w": 96,
+      "h": 61,
+      "note": "west belt carDark"
+    },
+    {
+      "x": 470,
+      "y": 1368,
+      "w": 71,
+      "h": 92,
+      "note": "west belt rubbleL"
+    },
+    {
+      "x": 523,
+      "y": 1358,
+      "w": 95,
+      "h": 135,
+      "note": "west belt deadC"
+    },
+    {
+      "x": 470,
+      "y": 1392,
+      "w": 89,
+      "h": 118,
+      "note": "west belt deadB"
+    },
+    {
+      "x": 1100,
+      "y": 258,
+      "w": 116,
+      "h": 122,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1171,
+      "y": 261,
+      "w": 111,
+      "h": 115,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1129,
+      "y": 328,
+      "w": 97,
+      "h": 101,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1128,
+      "y": 366,
+      "w": 103,
+      "h": 105,
+      "note": "east belt bigtree"
+    },
+    {
+      "x": 1096,
+      "y": 377,
+      "w": 123,
+      "h": 125,
+      "note": "east belt bigtree"
+    },
+    {
+      "x": 1177,
+      "y": 395,
+      "w": 87,
+      "h": 88,
+      "note": "east belt bush"
+    },
+    {
+      "x": 1109,
+      "y": 447,
+      "w": 103,
+      "h": 105,
+      "note": "east belt bigtree"
+    },
+    {
+      "x": 1093,
+      "y": 469,
+      "w": 111,
+      "h": 115,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1166,
+      "y": 480,
+      "w": 98,
+      "h": 99,
+      "note": "east belt bigtree"
+    },
+    {
+      "x": 1079,
+      "y": 512,
+      "w": 123,
+      "h": 125,
+      "note": "east belt bigtree"
+    },
+    {
+      "x": 1151,
+      "y": 493,
+      "w": 116,
+      "h": 122,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1074,
+      "y": 543,
+      "w": 103,
+      "h": 108,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1127,
+      "y": 552,
+      "w": 93,
+      "h": 94,
+      "note": "east belt bush"
+    },
+    {
+      "x": 1053,
+      "y": 583,
+      "w": 123,
+      "h": 128,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1071,
+      "y": 625,
+      "w": 97,
+      "h": 101,
+      "note": "east belt tree"
+    },
+    {
+      "x": 1128,
+      "y": 611,
+      "w": 110,
+      "h": 128,
+      "note": "east belt deadcard"
+    },
+    {
+      "x": 1124,
+      "y": 713,
+      "w": 84,
+      "h": 98,
+      "note": "east belt rockpile"
+    },
+    {
+      "x": 1123,
+      "y": 831,
+      "w": 79,
+      "h": 112,
+      "note": "east belt deadC"
+    },
+    {
+      "x": 1167,
+      "y": 835,
+      "w": 75,
+      "h": 100,
+      "note": "east belt deadB"
+    },
+    {
+      "x": 1122,
+      "y": 896,
+      "w": 74,
+      "h": 97,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1117,
+      "y": 901,
+      "w": 89,
+      "h": 118,
+      "note": "east belt deadB"
+    },
+    {
+      "x": 1116,
+      "y": 982,
+      "w": 62,
+      "h": 82,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1115,
+      "y": 1016,
+      "w": 70,
+      "h": 94,
+      "note": "east belt deadB"
+    },
+    {
+      "x": 1159,
+      "y": 1038,
+      "w": 104,
+      "h": 66,
+      "note": "east belt carDark"
+    },
+    {
+      "x": 1099,
+      "y": 1086,
+      "w": 89,
+      "h": 60,
+      "note": "east belt wall2"
+    },
+    {
+      "x": 1063,
+      "y": 1107,
+      "w": 62,
+      "h": 82,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 1111,
+      "y": 1124,
+      "w": 91,
+      "h": 55,
+      "note": "east belt rubbleS"
+    },
+    {
+      "x": 1053,
+      "y": 1119,
+      "w": 55,
+      "h": 93,
+      "note": "east belt deadE"
+    },
+    {
+      "x": 968,
+      "y": 1237,
+      "w": 55,
+      "h": 93,
+      "note": "east belt deadE"
+    },
+    {
+      "x": 1018,
+      "y": 1216,
+      "w": 95,
+      "h": 135,
+      "note": "east belt deadC"
+    },
+    {
+      "x": 825,
+      "y": 1270,
+      "w": 65,
+      "h": 96,
+      "note": "east belt deadA"
+    },
+    {
+      "x": 885,
+      "y": 1290,
+      "w": 71,
+      "h": 92,
+      "note": "east belt rubbleL"
+    },
+    {
+      "x": 745,
+      "y": 1295,
+      "w": 79,
+      "h": 117,
+      "note": "east belt deadA"
+    },
+    {
+      "x": 800,
+      "y": 1282,
+      "w": 100,
+      "h": 143,
+      "note": "east belt deadC"
+    },
+    {
+      "x": 711,
+      "y": 1349,
+      "w": 84,
+      "h": 120,
+      "note": "east belt deadC"
+    },
+    {
+      "x": 770,
+      "y": 1349,
+      "w": 74,
+      "h": 110,
+      "note": "east belt deadA"
+    },
+    {
+      "x": 833,
+      "y": 1339,
+      "w": 89,
+      "h": 118,
+      "note": "east belt deadB"
+    },
+    {
+      "x": 712,
+      "y": 1394,
+      "w": 84,
+      "h": 112,
+      "note": "east belt deadB"
+    },
+    {
+      "x": 772,
+      "y": 1389,
+      "w": 84,
+      "h": 123,
+      "note": "east belt deadA"
+    },
+    {
+      "x": 578,
+      "y": 276,
+      "w": 69,
+      "h": 70,
+      "note": "river bank shrub"
+    },
+    {
+      "x": 668,
+      "y": 276,
+      "w": 64,
+      "h": 64,
+      "note": "river bank shrub"
+    },
+    {
+      "x": 928,
+      "y": 272,
+      "w": 69,
+      "h": 70,
+      "note": "river bank shrub"
+    },
+    {
+      "x": 1022,
+      "y": 268,
+      "w": 69,
+      "h": 70,
+      "note": "river bank shrub"
+    },
+    {
+      "x": 1069,
+      "y": 258,
+      "w": 84,
+      "h": 88,
+      "note": "river bank shrub"
+    },
+    {
+      "x": 905,
+      "y": 336,
+      "w": 51,
+      "h": 64,
+      "note": "milestone sign"
+    },
+    {
+      "x": 577,
+      "y": 385,
+      "w": 103,
+      "h": 108,
+      "note": "meadow tree"
+    },
+    {
+      "x": 1033,
+      "y": 355,
+      "w": 90,
+      "h": 91,
+      "note": "meadow tree"
+    },
+    {
+      "x": 558,
+      "y": 534,
+      "w": 69,
+      "h": 70,
+      "note": "meadow bush"
+    },
+    {
+      "x": 939,
+      "y": 567,
+      "w": 91,
+      "h": 95,
+      "note": "yellowing tree"
+    },
+    {
+      "x": 775,
+      "y": 592,
+      "w": 75,
+      "h": 100,
+      "note": "first dead tree"
+    },
+    {
+      "x": 607,
+      "y": 735,
+      "w": 59,
+      "h": 70,
+      "note": "cover rocks"
+    },
+    {
+      "x": 627,
+      "y": 597,
+      "w": 43,
+      "h": 78,
+      "note": "cover sapling"
+    },
+    {
+      "x": 921,
+      "y": 748,
+      "w": 54,
+      "h": 64,
+      "note": "cover rocks"
+    },
+    {
+      "x": 1031,
+      "y": 606,
+      "w": 60,
+      "h": 90,
+      "note": "cover dead tree"
+    },
+    {
+      "x": 648,
+      "y": 833,
+      "w": 63,
+      "h": 90,
+      "note": "dead tree"
+    },
+    {
+      "x": 923,
+      "y": 854,
+      "w": 54,
+      "h": 64,
+      "note": "rocks"
+    },
+    {
+      "x": 671,
+      "y": 1030,
+      "w": 57,
+      "h": 34,
+      "note": "cover rubble"
+    },
+    {
+      "x": 535,
+      "y": 951,
+      "w": 51,
+      "h": 86,
+      "note": "dead tree"
+    },
+    {
+      "x": 903,
+      "y": 966,
+      "w": 118,
+      "h": 71,
+      "note": "field station wall (plaque)"
+    },
+    {
+      "x": 1034,
+      "y": 964,
+      "w": 89,
+      "h": 60,
+      "note": "field station wall"
+    },
+    {
+      "x": 879,
+      "y": 1005,
+      "w": 42,
+      "h": 45,
+      "note": "field station crates"
+    },
+    {
+      "x": 1058,
+      "y": 1012,
+      "w": 46,
+      "h": 70,
+      "note": "field station beacon"
+    },
+    {
+      "x": 488,
+      "y": 1173,
+      "w": 117,
+      "h": 74,
+      "note": "wrecked car"
+    },
+    {
+      "x": 752,
+      "y": 1187,
+      "w": 96,
+      "h": 61,
+      "note": "wreck"
+    },
+    {
+      "x": 733,
+      "y": 1321,
+      "w": 54,
+      "h": 29,
+      "note": "barricade"
+    },
+    {
+      "x": 497,
+      "y": 1303,
+      "w": 102,
+      "h": 67,
+      "note": "wrecked van"
+    },
+    {
+      "x": 827,
+      "y": 1297,
+      "w": 59,
+      "h": 66,
+      "note": "burning debris"
+    },
+    {
+      "x": 497,
+      "y": 1341,
+      "w": 70,
+      "h": 94,
+      "note": "seam dead tree"
+    },
+    {
+      "x": 497,
+      "y": 1379,
+      "w": 66,
+      "h": 76,
+      "note": "seam rubble"
+    },
+    {
+      "x": 793,
+      "y": 1379,
+      "w": 55,
+      "h": 71,
+      "note": "seam rubble"
+    },
+    {
+      "x": 826,
+      "y": 1355,
+      "w": 65,
+      "h": 87,
+      "note": "seam dead tree"
+    },
+    {
+      "x": 532,
+      "y": 1422,
+      "w": 57,
+      "h": 34,
+      "note": "rubble by the road"
+    },
+    {
+      "x": 742,
+      "y": 1422,
+      "w": 57,
+      "h": 34,
+      "note": "rubble by the road"
+    }
+  ],
+  "occluders": [],
+  "npcs": [
+    {
+      "id": "mira",
+      "sprite": "mira",
+      "name": "Mira",
+      "x": 990,
+      "y": 1096,
+      "facing": "down",
+      "dialogue": "mira",
+      "wander": 0,
+      "tint": null
+    }
+  ],
+  "pickups": [
+    {
+      "id": "os-satchel",
+      "item": "crystal",
+      "x": 518,
+      "y": 912,
+      "dialogue": "pickup-satchel",
+      "requires": {
+        "quest": "satchel"
+      }
+    },
+    {
+      "id": "os-water-1",
+      "item": "water",
+      "x": 1010,
+      "y": 526,
+      "dialogue": null
+    },
+    {
+      "id": "os-water-2",
+      "item": "water",
+      "x": 600,
+      "y": 1150,
+      "dialogue": null
+    }
+  ],
+  "inspectables": [
+    {
+      "id": "milestone",
+      "x": 905,
+      "y": 336,
+      "w": 51,
+      "h": 64,
+      "dialogue": "inspect-milestone"
+    },
+    {
+      "id": "deadtree",
+      "x": 775,
+      "y": 592,
+      "w": 75,
+      "h": 100,
+      "dialogue": "inspect-deadtree"
+    },
+    {
+      "id": "outpost",
+      "x": 903,
+      "y": 966,
+      "w": 118,
+      "h": 71,
+      "dialogue": "inspect-outpost"
+    },
+    {
+      "id": "wreck",
+      "x": 488,
+      "y": 1173,
+      "w": 117,
+      "h": 74,
+      "dialogue": "inspect-wreck"
+    }
+  ],
+  "zones": [
+    {
+      "id": "gate",
+      "x": 789,
+      "y": 150,
+      "w": 104,
+      "h": 16
+    },
+    {
+      "id": "exit",
+      "x": 590,
+      "y": 1604,
+      "w": 134,
+      "h": 36
+    }
+  ],
+  "hazards": [
+    {
+      "type": "toxic",
+      "x": 479,
+      "y": 870,
+      "w": 138,
+      "h": 84
+    },
+    {
+      "type": "toxic",
+      "x": 1016,
+      "y": 813,
+      "w": 92,
+      "h": 58
+    },
+    {
+      "type": "toxic",
+      "x": 875,
+      "y": 1188,
+      "w": 86,
+      "h": 52
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "os-cp-1",
+      "x": 795,
+      "y": 186,
+      "w": 92,
+      "h": 64,
+      "respawn": {
+        "x": 841,
+        "y": 222
+      }
+    },
+    {
+      "id": "os-cp-2",
+      "x": 812,
+      "y": 1100,
+      "w": 110,
+      "h": 56,
+      "respawn": {
+        "x": 868,
+        "y": 1132
+      }
+    }
+  ],
+  "drones": [
+    {
+      "id": "d1",
+      "speed": 40,
+      "loop": false,
+      "path": [
+        {
+          "x": 560,
+          "y": 746
+        },
+        {
+          "x": 1050,
+          "y": 746
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "speed": 40,
+      "loop": false,
+      "path": [
+        {
+          "x": 604,
+          "y": 990
+        },
+        {
+          "x": 870,
+          "y": 990
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "speed": 42,
+      "loop": false,
+      "path": [
+        {
+          "x": 500,
+          "y": 1296
+        },
+        {
+          "x": 860,
+          "y": 1296
+        }
+      ]
+    }
+  ],
+  "crawlers": [],
+  "markers": {
+    "outskirts": {
+      "x": 990,
+      "y": 1096
+    },
+    "satchel": {
+      "x": 518,
+      "y": 912
+    },
+    "to_city": {
+      "x": 657,
+      "y": 1622
+    }
+  }
+}

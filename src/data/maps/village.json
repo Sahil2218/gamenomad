@@ -1,0 +1,1125 @@
+{
+  "image": "map-village",
+  "width": 1448,
+  "height": 1086,
+  "area": "Village 07",
+  "spawn": {
+    "x": 298,
+    "y": 762,
+    "facing": "down"
+  },
+  "colliders": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 152,
+      "h": 134,
+      "note": "NW forest + north fence (west of NW tower)"
+    },
+    {
+      "x": 150,
+      "y": 0,
+      "w": 86,
+      "h": 166,
+      "note": "NW gate tower"
+    },
+    {
+      "x": 236,
+      "y": 0,
+      "w": 436,
+      "h": 140,
+      "note": "north fence + forest (NW tower to town hall)"
+    },
+    {
+      "x": 1012,
+      "y": 0,
+      "w": 200,
+      "h": 138,
+      "note": "north fence + forest (town hall to NE tower)"
+    },
+    {
+      "x": 1210,
+      "y": 0,
+      "w": 87,
+      "h": 166,
+      "note": "NE gate tower"
+    },
+    {
+      "x": 1295,
+      "y": 0,
+      "w": 77,
+      "h": 138,
+      "note": "north fence (NE tower to east corner)"
+    },
+    {
+      "x": 1345,
+      "y": 130,
+      "w": 25,
+      "h": 146,
+      "note": "east fence (vertical)"
+    },
+    {
+      "x": 1370,
+      "y": 0,
+      "w": 78,
+      "h": 274,
+      "note": "NE forest + low east fence"
+    },
+    {
+      "x": 1345,
+      "y": 274,
+      "w": 103,
+      "h": 32,
+      "note": "closes the NE path at the fence line"
+    },
+    {
+      "x": 1440,
+      "y": 300,
+      "w": 8,
+      "h": 560,
+      "note": "east map edge (forest)"
+    },
+    {
+      "x": 0,
+      "y": 134,
+      "w": 102,
+      "h": 226,
+      "note": "west fence (vertical)"
+    },
+    {
+      "x": 0,
+      "y": 355,
+      "w": 102,
+      "h": 65,
+      "note": "west fence corner posts"
+    },
+    {
+      "x": 0,
+      "y": 420,
+      "w": 105,
+      "h": 360,
+      "note": "west forest edge"
+    },
+    {
+      "x": 0,
+      "y": 762,
+      "w": 128,
+      "h": 150,
+      "note": "SW gate tower"
+    },
+    {
+      "x": 105,
+      "y": 520,
+      "w": 51,
+      "h": 132,
+      "note": "forest canopy west of red house"
+    },
+    {
+      "x": 125,
+      "y": 826,
+      "w": 547,
+      "h": 80,
+      "note": "south fence (west)"
+    },
+    {
+      "x": 0,
+      "y": 904,
+      "w": 789,
+      "h": 182,
+      "note": "cliff + river west of bridge (incl. left rail)"
+    },
+    {
+      "x": 668,
+      "y": 810,
+      "w": 75,
+      "h": 132,
+      "note": "south gate tower W"
+    },
+    {
+      "x": 940,
+      "y": 810,
+      "w": 73,
+      "h": 132,
+      "note": "south gate tower E"
+    },
+    {
+      "x": 893,
+      "y": 914,
+      "w": 555,
+      "h": 172,
+      "note": "cliff + river east of bridge (incl. right rail)"
+    },
+    {
+      "x": 1010,
+      "y": 866,
+      "w": 312,
+      "h": 72,
+      "note": "south fence (east)"
+    },
+    {
+      "x": 1318,
+      "y": 810,
+      "w": 82,
+      "h": 146,
+      "note": "SE gate tower"
+    },
+    {
+      "x": 1395,
+      "y": 812,
+      "w": 53,
+      "h": 123,
+      "note": "south fence (far east) + pocket by SE tower"
+    },
+    {
+      "x": 104,
+      "y": 130,
+      "w": 48,
+      "h": 52,
+      "note": "crate by NW tower"
+    },
+    {
+      "x": 110,
+      "y": 284,
+      "w": 118,
+      "h": 150,
+      "note": "garden plots + fence"
+    },
+    {
+      "x": 362,
+      "y": 234,
+      "w": 116,
+      "h": 18,
+      "note": "low fence (north lawn)"
+    },
+    {
+      "x": 390,
+      "y": 284,
+      "w": 42,
+      "h": 32,
+      "note": "fence east of blue-roof house (top)"
+    },
+    {
+      "x": 414,
+      "y": 284,
+      "w": 18,
+      "h": 140,
+      "note": "fence east of blue-roof house (column)"
+    },
+    {
+      "x": 1302,
+      "y": 395,
+      "w": 64,
+      "h": 133,
+      "note": "purple house fence E + mailbox"
+    },
+    {
+      "x": 1298,
+      "y": 150,
+      "w": 47,
+      "h": 112,
+      "note": "raised flower bed (NE)"
+    },
+    {
+      "x": 666,
+      "y": 0,
+      "w": 352,
+      "h": 206,
+      "note": "town hall (roof + walls)"
+    },
+    {
+      "x": 670,
+      "y": 200,
+      "w": 96,
+      "h": 50,
+      "note": "town hall flower bed W + planter"
+    },
+    {
+      "x": 764,
+      "y": 200,
+      "w": 158,
+      "h": 43,
+      "note": "town hall steps + planters"
+    },
+    {
+      "x": 914,
+      "y": 226,
+      "w": 28,
+      "h": 34,
+      "note": "town hall statue"
+    },
+    {
+      "x": 938,
+      "y": 200,
+      "w": 76,
+      "h": 52,
+      "note": "town hall flower bed E"
+    },
+    {
+      "x": 620,
+      "y": 132,
+      "w": 50,
+      "h": 82,
+      "note": "banner W (flag + pot)"
+    },
+    {
+      "x": 645,
+      "y": 214,
+      "w": 25,
+      "h": 38,
+      "note": "banner W (pole)"
+    },
+    {
+      "x": 1016,
+      "y": 124,
+      "w": 28,
+      "h": 128,
+      "note": "banner E (pole)"
+    },
+    {
+      "x": 1042,
+      "y": 140,
+      "w": 28,
+      "h": 52,
+      "note": "banner E (flag)"
+    },
+    {
+      "x": 238,
+      "y": 136,
+      "w": 34,
+      "h": 42,
+      "note": "bush by NW tower"
+    },
+    {
+      "x": 104,
+      "y": 198,
+      "w": 98,
+      "h": 74,
+      "note": "orange tree NW (wide)"
+    },
+    {
+      "x": 118,
+      "y": 184,
+      "w": 70,
+      "h": 102,
+      "note": "orange tree NW (tall)"
+    },
+    {
+      "x": 335,
+      "y": 138,
+      "w": 116,
+      "h": 58,
+      "note": "tree north by blue house (canopy)"
+    },
+    {
+      "x": 354,
+      "y": 194,
+      "w": 78,
+      "h": 36,
+      "note": "tree north by blue house (lower canopy + trunk)"
+    },
+    {
+      "x": 463,
+      "y": 138,
+      "w": 128,
+      "h": 44,
+      "note": "big tree north (canopy)"
+    },
+    {
+      "x": 480,
+      "y": 180,
+      "w": 96,
+      "h": 28,
+      "note": "big tree north (lower canopy + trunk)"
+    },
+    {
+      "x": 271,
+      "y": 193,
+      "w": 59,
+      "h": 19,
+      "note": "blue-roof house (roof peak)"
+    },
+    {
+      "x": 244,
+      "y": 210,
+      "w": 114,
+      "h": 22,
+      "note": "blue-roof house (upper roof)"
+    },
+    {
+      "x": 209,
+      "y": 230,
+      "w": 177,
+      "h": 22,
+      "note": "blue-roof house (mid roof)"
+    },
+    {
+      "x": 209,
+      "y": 250,
+      "w": 182,
+      "h": 184,
+      "note": "blue-roof house (roof, chimney, walls, planters)"
+    },
+    {
+      "x": 376,
+      "y": 370,
+      "w": 38,
+      "h": 62,
+      "note": "barrel by blue-roof house"
+    },
+    {
+      "x": 455,
+      "y": 236,
+      "w": 107,
+      "h": 80,
+      "note": "orange tree by stall (wide)"
+    },
+    {
+      "x": 472,
+      "y": 218,
+      "w": 72,
+      "h": 116,
+      "note": "orange tree by stall (tall)"
+    },
+    {
+      "x": 492,
+      "y": 320,
+      "w": 36,
+      "h": 24,
+      "note": "orange tree by stall (trunk)"
+    },
+    {
+      "x": 550,
+      "y": 285,
+      "w": 82,
+      "h": 60,
+      "note": "pink bush behind stall"
+    },
+    {
+      "x": 552,
+      "y": 343,
+      "w": 142,
+      "h": 130,
+      "note": "market stall (awning + counter)"
+    },
+    {
+      "x": 694,
+      "y": 345,
+      "w": 48,
+      "h": 127,
+      "note": "crates + barrel + bush by stall"
+    },
+    {
+      "x": 765,
+      "y": 318,
+      "w": 28,
+      "h": 114,
+      "note": "lamp post (stall)"
+    },
+    {
+      "x": 894,
+      "y": 362,
+      "w": 41,
+      "h": 52,
+      "note": "lamp post east lawn (head)"
+    },
+    {
+      "x": 905,
+      "y": 414,
+      "w": 30,
+      "h": 42,
+      "note": "lamp post east lawn (pole)"
+    },
+    {
+      "x": 940,
+      "y": 410,
+      "w": 42,
+      "h": 46,
+      "note": "bush (east lawn)"
+    },
+    {
+      "x": 954,
+      "y": 332,
+      "w": 112,
+      "h": 82,
+      "note": "tree east lawn (wide)"
+    },
+    {
+      "x": 972,
+      "y": 314,
+      "w": 76,
+      "h": 118,
+      "note": "tree east lawn (tall)"
+    },
+    {
+      "x": 994,
+      "y": 420,
+      "w": 40,
+      "h": 28,
+      "note": "tree east lawn (trunk)"
+    },
+    {
+      "x": 990,
+      "y": 450,
+      "w": 50,
+      "h": 54,
+      "note": "lamp post east plaza (head)"
+    },
+    {
+      "x": 1010,
+      "y": 504,
+      "w": 28,
+      "h": 50,
+      "note": "lamp post east plaza (pole)"
+    },
+    {
+      "x": 458,
+      "y": 492,
+      "w": 74,
+      "h": 62,
+      "note": "signpost (boards)"
+    },
+    {
+      "x": 480,
+      "y": 552,
+      "w": 28,
+      "h": 48,
+      "note": "signpost (post)"
+    },
+    {
+      "x": 778,
+      "y": 494,
+      "w": 128,
+      "h": 84,
+      "note": "well (frame + roof bar)"
+    },
+    {
+      "x": 788,
+      "y": 576,
+      "w": 100,
+      "h": 46,
+      "note": "well (stone ring)"
+    },
+    {
+      "x": 868,
+      "y": 596,
+      "w": 34,
+      "h": 32,
+      "note": "barrel by well"
+    },
+    {
+      "x": 596,
+      "y": 554,
+      "w": 50,
+      "h": 62,
+      "note": "lamp post SW plaza (head)"
+    },
+    {
+      "x": 598,
+      "y": 616,
+      "w": 24,
+      "h": 36,
+      "note": "lamp post SW plaza (pole)"
+    },
+    {
+      "x": 230,
+      "y": 482,
+      "w": 50,
+      "h": 18,
+      "note": "red house (roof peak)"
+    },
+    {
+      "x": 200,
+      "y": 498,
+      "w": 112,
+      "h": 32,
+      "note": "red house (upper roof)"
+    },
+    {
+      "x": 306,
+      "y": 503,
+      "w": 62,
+      "h": 61,
+      "note": "red house (chimney)"
+    },
+    {
+      "x": 146,
+      "y": 528,
+      "w": 222,
+      "h": 36,
+      "note": "red house (mid roof)"
+    },
+    {
+      "x": 144,
+      "y": 562,
+      "w": 230,
+      "h": 178,
+      "note": "red house (eaves + walls + door step)"
+    },
+    {
+      "x": 238,
+      "y": 728,
+      "w": 36,
+      "h": 24,
+      "note": "red house planter"
+    },
+    {
+      "x": 212,
+      "y": 726,
+      "w": 28,
+      "h": 24,
+      "note": "red house stool"
+    },
+    {
+      "x": 326,
+      "y": 750,
+      "w": 32,
+      "h": 36,
+      "note": "bush by red house path"
+    },
+    {
+      "x": 144,
+      "y": 452,
+      "w": 88,
+      "h": 76,
+      "note": "orange tree behind red house (wide)"
+    },
+    {
+      "x": 158,
+      "y": 436,
+      "w": 62,
+      "h": 106,
+      "note": "orange tree behind red house (tall)"
+    },
+    {
+      "x": 86,
+      "y": 704,
+      "w": 116,
+      "h": 80,
+      "note": "orange tree SW (wide)"
+    },
+    {
+      "x": 104,
+      "y": 686,
+      "w": 80,
+      "h": 114,
+      "note": "orange tree SW (tall)"
+    },
+    {
+      "x": 124,
+      "y": 794,
+      "w": 44,
+      "h": 32,
+      "note": "orange tree SW (trunk)"
+    },
+    {
+      "x": 356,
+      "y": 530,
+      "w": 108,
+      "h": 80,
+      "note": "tree east of red house (wide)"
+    },
+    {
+      "x": 374,
+      "y": 512,
+      "w": 72,
+      "h": 116,
+      "note": "tree east of red house (tall)"
+    },
+    {
+      "x": 378,
+      "y": 624,
+      "w": 44,
+      "h": 24,
+      "note": "tree east of red house (trunk)"
+    },
+    {
+      "x": 440,
+      "y": 620,
+      "w": 15,
+      "h": 28,
+      "note": "yard fence post"
+    },
+    {
+      "x": 364,
+      "y": 700,
+      "w": 116,
+      "h": 36,
+      "note": "yard fence (horizontal)"
+    },
+    {
+      "x": 464,
+      "y": 612,
+      "w": 16,
+      "h": 124,
+      "note": "yard fence (vertical)"
+    },
+    {
+      "x": 370,
+      "y": 740,
+      "w": 84,
+      "h": 46,
+      "note": "bench"
+    },
+    {
+      "x": 504,
+      "y": 650,
+      "w": 110,
+      "h": 90,
+      "note": "big tree south (wide; west edge trimmed for the home lane)"
+    },
+    {
+      "x": 515,
+      "y": 625,
+      "w": 85,
+      "h": 135,
+      "note": "big tree south (tall)"
+    },
+    {
+      "x": 524,
+      "y": 740,
+      "w": 58,
+      "h": 44,
+      "note": "big tree south (trunk)"
+    },
+    {
+      "x": 604,
+      "y": 670,
+      "w": 120,
+      "h": 112,
+      "note": "blossom tree south (wide)"
+    },
+    {
+      "x": 618,
+      "y": 640,
+      "w": 90,
+      "h": 154,
+      "note": "blossom tree south (tall)"
+    },
+    {
+      "x": 644,
+      "y": 776,
+      "w": 40,
+      "h": 30,
+      "note": "blossom tree south (trunk)"
+    },
+    {
+      "x": 578,
+      "y": 778,
+      "w": 60,
+      "h": 54,
+      "note": "lamp head outside south fence"
+    },
+    {
+      "x": 756,
+      "y": 810,
+      "w": 42,
+      "h": 104,
+      "note": "gate lamp W (head + pole)"
+    },
+    {
+      "x": 888,
+      "y": 810,
+      "w": 34,
+      "h": 106,
+      "note": "gate lamp E (head + pole)"
+    },
+    {
+      "x": 1074,
+      "y": 138,
+      "w": 40,
+      "h": 42,
+      "note": "bush (NE lawn)"
+    },
+    {
+      "x": 1100,
+      "y": 160,
+      "w": 104,
+      "h": 72,
+      "note": "tree NE lawn (wide)"
+    },
+    {
+      "x": 1116,
+      "y": 144,
+      "w": 72,
+      "h": 104,
+      "note": "tree NE lawn (tall)"
+    },
+    {
+      "x": 1132,
+      "y": 232,
+      "w": 40,
+      "h": 28,
+      "note": "tree NE lawn (trunk)"
+    },
+    {
+      "x": 1188,
+      "y": 258,
+      "w": 54,
+      "h": 24,
+      "note": "purple house (roof peak)"
+    },
+    {
+      "x": 1166,
+      "y": 280,
+      "w": 140,
+      "h": 24,
+      "note": "purple house (upper roof + chimney top)"
+    },
+    {
+      "x": 1121,
+      "y": 302,
+      "w": 186,
+      "h": 208,
+      "note": "purple house (roof, chimney, walls, door step)"
+    },
+    {
+      "x": 1076,
+      "y": 370,
+      "w": 52,
+      "h": 152,
+      "note": "purple house fence W + barrel"
+    },
+    {
+      "x": 1076,
+      "y": 484,
+      "w": 94,
+      "h": 38,
+      "note": "purple house front fence W + planter"
+    },
+    {
+      "x": 1226,
+      "y": 486,
+      "w": 94,
+      "h": 40,
+      "note": "purple house front fence E"
+    },
+    {
+      "x": 1074,
+      "y": 306,
+      "w": 62,
+      "h": 56,
+      "note": "small tree W of purple house (wide)"
+    },
+    {
+      "x": 1086,
+      "y": 296,
+      "w": 40,
+      "h": 78,
+      "note": "small tree W of purple house (tall + trunk)"
+    },
+    {
+      "x": 1304,
+      "y": 298,
+      "w": 66,
+      "h": 98,
+      "note": "fruit tree behind purple fence"
+    },
+    {
+      "x": 1366,
+      "y": 300,
+      "w": 82,
+      "h": 148,
+      "note": "big tree east edge (canopy + trunk)"
+    },
+    {
+      "x": 1328,
+      "y": 470,
+      "w": 120,
+      "h": 68,
+      "note": "cherry tree (wide)"
+    },
+    {
+      "x": 1350,
+      "y": 448,
+      "w": 98,
+      "h": 100,
+      "note": "cherry tree (tall)"
+    },
+    {
+      "x": 1366,
+      "y": 546,
+      "w": 38,
+      "h": 32,
+      "note": "cherry tree (trunk + roots)"
+    },
+    {
+      "x": 1398,
+      "y": 516,
+      "w": 50,
+      "h": 108,
+      "note": "tree east edge lower"
+    },
+    {
+      "x": 1326,
+      "y": 594,
+      "w": 50,
+      "h": 50,
+      "note": "fallen log (west end)"
+    },
+    {
+      "x": 1360,
+      "y": 590,
+      "w": 56,
+      "h": 72,
+      "note": "fallen log (east end)"
+    },
+    {
+      "x": 1328,
+      "y": 654,
+      "w": 60,
+      "h": 32,
+      "note": "woodshed (back of roof)"
+    },
+    {
+      "x": 1328,
+      "y": 684,
+      "w": 116,
+      "h": 128,
+      "note": "woodshed (roof + log pile)"
+    },
+    {
+      "x": 1192,
+      "y": 576,
+      "w": 80,
+      "h": 30,
+      "note": "blue house (roof peak)"
+    },
+    {
+      "x": 1176,
+      "y": 604,
+      "w": 116,
+      "h": 16,
+      "note": "blue house (upper roof)"
+    },
+    {
+      "x": 1134,
+      "y": 618,
+      "w": 176,
+      "h": 16,
+      "note": "blue house (roof + chimney top)"
+    },
+    {
+      "x": 1132,
+      "y": 632,
+      "w": 198,
+      "h": 16,
+      "note": "blue house (lower roof)"
+    },
+    {
+      "x": 1128,
+      "y": 646,
+      "w": 208,
+      "h": 192,
+      "note": "blue house (eaves, walls, planter, barrel)"
+    },
+    {
+      "x": 1226,
+      "y": 810,
+      "w": 72,
+      "h": 40,
+      "note": "blue house table"
+    },
+    {
+      "x": 1078,
+      "y": 712,
+      "w": 64,
+      "h": 128,
+      "note": "barrels + fence W of blue house"
+    },
+    {
+      "x": 1096,
+      "y": 658,
+      "w": 40,
+      "h": 58,
+      "note": "bush W of blue house chimney"
+    },
+    {
+      "x": 948,
+      "y": 652,
+      "w": 154,
+      "h": 96,
+      "note": "fruit tree SE (wide)"
+    },
+    {
+      "x": 972,
+      "y": 626,
+      "w": 108,
+      "h": 146,
+      "note": "fruit tree SE (tall)"
+    },
+    {
+      "x": 990,
+      "y": 764,
+      "w": 52,
+      "h": 32,
+      "note": "fruit tree SE (trunk)"
+    }
+  ],
+  "occluders": [],
+  "npcs": [
+    {
+      "id": "mayor",
+      "sprite": "mayor",
+      "name": "Mayor Orrin",
+      "x": 840,
+      "y": 266,
+      "facing": "down",
+      "dialogue": "mayor",
+      "wander": 0,
+      "tint": null
+    },
+    {
+      "id": "tamsin",
+      "sprite": "villager",
+      "name": "Old Tamsin",
+      "x": 766,
+      "y": 606,
+      "facing": "right",
+      "dialogue": "tamsin",
+      "wander": 0,
+      "tint": null
+    },
+    {
+      "id": "hessa",
+      "sprite": "villager",
+      "name": "Hessa",
+      "x": 622,
+      "y": 496,
+      "facing": "down",
+      "dialogue": "hessa",
+      "wander": 0,
+      "tint": "#d8c8a8"
+    },
+    {
+      "id": "bram",
+      "sprite": "villager",
+      "name": "Bram",
+      "x": 256,
+      "y": 458,
+      "facing": "left",
+      "dialogue": "bram",
+      "wander": 0,
+      "tint": "#b8d0e8"
+    },
+    {
+      "id": "pip",
+      "sprite": "villager",
+      "name": "Pip",
+      "x": 690,
+      "y": 540,
+      "facing": "down",
+      "dialogue": "pip",
+      "wander": 40,
+      "tint": "#e8c0c8"
+    }
+  ],
+  "pickups": [
+    {
+      "id": "journal",
+      "item": "journal",
+      "x": 460,
+      "y": 360,
+      "dialogue": "pickup-journal"
+    },
+    {
+      "id": "shard",
+      "item": "shard",
+      "x": 1340,
+      "y": 572,
+      "dialogue": "pickup-shard"
+    }
+  ],
+  "inspectables": [
+    {
+      "id": "signpost",
+      "x": 460,
+      "y": 495,
+      "w": 68,
+      "h": 103,
+      "dialogue": "inspect-signpost"
+    },
+    {
+      "id": "well",
+      "x": 784,
+      "y": 496,
+      "w": 120,
+      "h": 126,
+      "dialogue": "inspect-well"
+    },
+    {
+      "id": "banner",
+      "x": 686,
+      "y": 812,
+      "w": 62,
+      "h": 110,
+      "dialogue": "inspect-banner"
+    },
+    {
+      "id": "home",
+      "x": 272,
+      "y": 676,
+      "w": 54,
+      "h": 62,
+      "dialogue": "inspect-home"
+    }
+  ],
+  "zones": [
+    {
+      "id": "barrier",
+      "x": 740,
+      "y": 916,
+      "w": 204,
+      "h": 14
+    },
+    {
+      "id": "exit",
+      "x": 790,
+      "y": 1036,
+      "w": 102,
+      "h": 50
+    }
+  ],
+  "markers": {
+    "wake": {
+      "x": 840,
+      "y": 266
+    },
+    "explore": [
+      {
+        "x": 460,
+        "y": 360,
+        "if": {
+          "notFlags": [
+            "picked_journal"
+          ]
+        }
+      },
+      {
+        "x": 1340,
+        "y": 572,
+        "if": {
+          "notFlags": [
+            "picked_shard"
+          ]
+        }
+      },
+      {
+        "x": 622,
+        "y": 496,
+        "if": {
+          "notItems": [
+            "map"
+          ]
+        }
+      }
+    ],
+    "confront": {
+      "x": 840,
+      "y": 266
+    },
+    "bridge": {
+      "x": 842,
+      "y": 923
+    }
+  }
+}

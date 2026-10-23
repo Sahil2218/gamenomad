@@ -1,0 +1,62 @@
+{
+  "journal": {
+    "name": "Tobin's Journal",
+    "description": "Twine-bound pages in Tobin's slanted hand. Some are written far too neatly to be his.",
+    "type": "artifact"
+  },
+  "map": {
+    "name": "Map to Paradise",
+    "description": "Hand-drawn on cloth. A dotted line runs south past the old bridge to a white smudge marked P.",
+    "type": "artifact"
+  },
+  "shard": {
+    "name": "Humming Shard",
+    "description": "Dark stone, warm as skin. Its hum deepens whenever you face south.",
+    "type": "artifact"
+  },
+  "medkit": {
+    "name": "Worn Medkit",
+    "description": "A dented tin of bandages and bitter tonic. Packed long ago, as if someone expected you.",
+    "type": "supply"
+  },
+  "water": {
+    "name": "Water Flask",
+    "description": "Clean water in a stoppered flask. Out here it tastes like home.",
+    "type": "supply"
+  },
+  "ration": {
+    "name": "Dry Ration",
+    "description": "Pressed grain and salt in waxed paper. Tastes of nothing, keeps forever.",
+    "type": "supply"
+  },
+  "core": {
+    "name": "Dormant Core",
+    "description": "A fist-sized cell that pulses like a slow heart. Ryn swears it was stone-cold when he found it.",
+    "type": "artifact"
+  },
+  "radio": {
+    "name": "Lullaby Radio",
+    "description": "Nova's cracked handset. It catches one station only: a lullaby she knows but can't place.",
+    "type": "artifact"
+  },
+  "keycard": {
+    "name": "Blank Keycard",
+    "description": "A thin grey card Eli never explains. Worn smooth except for two stamped numerals: 01.",
+    "type": "artifact"
+  },
+  "toolkit": {
+    "name": "Salvage Toolkit",
+    "description": "Wrenches, wire and a cracked multimeter in an oilcloth roll. Ryn's, mostly.",
+    "type": "supply"
+  },
+  "crystal": {
+    "name": "Lattice Crystal",
+    "description": "Mira's crystal, a fine grid etched inside. The grid rearranges itself, faster near your shard.",
+    "type": "artifact"
+  },
+  "medallion": {
+    "name": "Iron Medallion",
+    "description": "Kael's token on a frayed cord. He woke up wearing it and can't remember how he got it.",
+    "type": "artifact"
+  }
+}

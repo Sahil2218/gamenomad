@@ -1,0 +1,2433 @@
+{
+  "intro": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Village 07. A dozen lanterns, one well, and one rule." },
+        { "speaker": "", "portrait": null, "text": "Never cross the boundary. Those who leave are never seen again." },
+        { "speaker": "", "portrait": null, "text": "Tobin left last winter. Nobody says his name anymore." },
+        { "speaker": "", "portrait": null, "text": "You haven't slept in days. Under the floorboards, something hums. Low. Patient." },
+        { "speaker": "", "portrait": null, "text": "The village is waking. Maybe Mayor Orrin is, too." }
+      ]
+    }
+  ],
+
+  "mayor": [
+    {
+      "if": { "quest": "wake" },
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Up before the roosters? You and me both, friend. Bad dreams, I'd wager." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Whatever keeps you up, the rule still stands. We stay inside the boundary. The Warden keeps us safe." },
+        { "speaker": "You", "portrait": "nomad", "text": "Tobin didn't stay." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Tobin made his choice. Let him rest, and leave his things where they lie." }
+      ],
+      "effects": { "setFlags": ["met_mayor"], "setQuest": "explore" }
+    },
+    {
+      "if": { "quest": "explore" },
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Still chasing Tobin's ghosts? I can see it on you. He had the same look." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Ghosts are poor company. Go home and sleep. The hum stops if you stop listening." },
+        { "speaker": "You", "portrait": "nomad", "text": "So you hear it too." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "...Good day, friend." }
+      ]
+    },
+    {
+      "if": { "quest": "confront" },
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Tobin's pages. His map. That stone. Where did you... no. I know where." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Everyone who ever left carried things like those. Every one. Not one came back." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Burn them, friend. Tonight. Before the Warden notices what you're carrying." }
+      ],
+      "choices": [
+        {
+          "text": "I'm going to find Paradise.",
+          "effects": { "setFlags": ["told_mayor_truth"], "setQuest": "bridge" },
+          "next": "mayor-truth"
+        },
+        {
+          "text": "You're right. I'll burn them.",
+          "effects": { "setFlags": ["lied_to_mayor"], "setQuest": "bridge" },
+          "next": "mayor-lie"
+        }
+      ]
+    },
+    {
+      "if": { "quest": "bridge", "flags": ["told_mayor_truth"] },
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Go while the lanterns are low. I'll tell them I never saw you." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "And if you find it... no. Don't send word. Just keep walking." }
+      ]
+    },
+    {
+      "if": { "quest": "bridge", "flags": ["lied_to_mayor"] },
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "No smoke from your chimney yet, friend." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "...I'll pretend I didn't notice. Just this once." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Keep to the lanterns, friend." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "The Warden watches over all of us. It always has." }
+      ]
+    }
+  ],
+
+  "mayor-truth": [
+    {
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Paradise. Tobin said it just like that. Like a prayer." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "The Warden told me once: keep them in, keep them safe. But I dream of steel stairs, too." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "The light runs thinnest at the old bridge, south. Watch for the flicker." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Take this. I won't watch another one leave empty-handed." }
+      ],
+      "effects": { "giveItems": ["medkit"], "setFlags": ["clue_mayor_dreams"] }
+    }
+  ],
+
+  "mayor-lie": [
+    {
+      "lines": [
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Good. Good. You don't know what it means to hear that." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "Burn them in your own hearth, not the square. And stay well clear of the old bridge." },
+        { "speaker": "Mayor Orrin", "portrait": "mayor", "text": "The light's gone thin there lately. It gives people ideas." }
+      ]
+    }
+  ],
+
+  "tamsin": [
+    {
+      "if": { "quest": "wake" },
+      "lines": [
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Couldn't sleep either? Nobody does, not really. Not here." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "I dream of stairs. Metal ones, going down and down. The floor hums like a cat." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Orrin walks at this hour too. Go keep him company." }
+      ]
+    },
+    {
+      "if": { "quest": "explore", "items": ["journal"] },
+      "lines": [
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "That's Tobin's book. Does he write about the stairs?" },
+        { "speaker": "You", "portrait": "nomad", "text": "He writes about Paradise." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Hm. In my dream there's a door at the bottom. A number painted on it. Zero... one." }
+      ],
+      "effects": { "setFlags": ["clue_door_01"] }
+    },
+    {
+      "if": { "quest": "explore" },
+      "lines": [
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Tobin used to sit under the orange tree by the blue house, writing. Scratch, scratch." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Said he had to put the dream down before it faded." },
+        { "speaker": "You", "portrait": "nomad", "text": "What dream?" },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Same as mine, child. Same as everyone's. We just don't say." }
+      ]
+    },
+    {
+      "if": { "quest": "confront" },
+      "lines": [
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "The water's been strange all week. Look too long and it looks back." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Orrin's pacing his porch again. He only does that when someone means to leave." }
+      ]
+    },
+    {
+      "if": { "quest": "bridge" },
+      "lines": [
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Going, are you? Don't fuss. Tobin had that same walk." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "If you find the stairs, child, go all the way down. I always wake before the bottom." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Stairs, and a hum, and a door. Every night the same." },
+        { "speaker": "Old Tamsin", "portrait": "villager", "text": "Hm. Mind the well, child. It's deeper than it looks." }
+      ]
+    }
+  ],
+
+  "bram": [
+    {
+      "if": { "quest": "wake" },
+      "lines": [
+        { "speaker": "Bram", "portrait": "villager", "text": "Sun's barely up and you're underfoot. What." },
+        { "speaker": "You", "portrait": "nomad", "text": "Couldn't sleep." },
+        { "speaker": "Bram", "portrait": "villager", "text": "Nobody sleeps right round here. Soil does. Never floods, never fails. Not natural, if you ask me." }
+      ]
+    },
+    {
+      "if": { "quest": "explore", "items": ["shard"] },
+      "lines": [
+        { "speaker": "Bram", "portrait": "villager", "text": "What's that in your pocket? It's buzzing like a wasp in a jar." },
+        { "speaker": "Bram", "portrait": "villager", "text": "Tobin dug round that pink tree for weeks. Now I know why. Get it off my field." }
+      ]
+    },
+    {
+      "if": { "quest": "explore" },
+      "lines": [
+        { "speaker": "Bram", "portrait": "villager", "text": "Tobin? Helped in my fields. Good hands. Head in the clouds." },
+        { "speaker": "Bram", "portrait": "villager", "text": "Kept staring at that pink tree, east side. Like it was humming him a song." },
+        { "speaker": "Bram", "portrait": "villager", "text": "Then one night, gone. Left a row half-dug. Who does that?" }
+      ]
+    },
+    {
+      "if": { "quest": "confront" },
+      "lines": [
+        { "speaker": "Bram", "portrait": "villager", "text": "Mayor's gone the colour of a turnip. That your doing?" },
+        { "speaker": "Bram", "portrait": "villager", "text": "Found a bolt in my furrow once. Clean steel, not a speck of rust. Dirt here's... wrong." }
+      ],
+      "effects": { "setFlags": ["clue_clean_steel"] }
+    },
+    {
+      "if": { "quest": "bridge" },
+      "lines": [
+        { "speaker": "Bram", "portrait": "villager", "text": "Off somewhere? Huh. Tobin had that look, last I saw him." },
+        { "speaker": "Bram", "portrait": "villager", "text": "Go round my field, not through it. And... mind yourself out there." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Bram", "portrait": "villager", "text": "Beans won't hoe themselves." },
+        { "speaker": "Bram", "portrait": "villager", "text": "Go on. Shoo." }
+      ]
+    }
+  ],
+
+  "hessa": [
+    {
+      "if": { "notFlags": ["met_mayor"] },
+      "lines": [
+        { "speaker": "Hessa", "portrait": "villager", "text": "Oh! You gave me a fright. Stall's not open yet, love." },
+        { "speaker": "Hessa", "portrait": "villager", "text": "Talk to the Mayor first, dear. He likes to see the sleepless ones before anyone else." }
+      ]
+    },
+    {
+      "if": { "flags": ["met_mayor"], "notFlags": ["hessa_gave_map"], "notItems": ["map"] },
+      "lines": [
+        { "speaker": "You", "portrait": "nomad", "text": "Tobin used to come by your stall, didn't he?" },
+        { "speaker": "Hessa", "portrait": "villager", "text": "Every market day. Bought nothing. Asked about everything." },
+        { "speaker": "Hessa", "portrait": "villager", "text": "He left this with me. Said it was for anyone who ever asked about Paradise." },
+        { "speaker": "Hessa", "portrait": "villager", "text": "You've got that look, dear. Take it, quick, before I lose my nerve." }
+      ],
+      "effects": { "giveItems": ["map"], "setFlags": ["hessa_gave_map"] }
+    },
+    {
+      "if": { "quest": "confront" },
+      "lines": [
+        { "speaker": "Hessa", "portrait": "villager", "text": "The Mayor came asking what I'd sold you. Turnips, I said. Turnips!" },
+        { "speaker": "Hessa", "portrait": "villager", "text": "Go and talk to him, dear, before he worries himself sick." }
+      ]
+    },
+    {
+      "if": { "quest": "bridge" },
+      "lines": [
+        { "speaker": "Hessa", "portrait": "villager", "text": "Off for a walk? Don't tell me where. I'm a terrible liar, dear." },
+        { "speaker": "Hessa", "portrait": "villager", "text": "Tobin never bought a thing, but I'd have given him anything. Same goes for you." }
+      ]
+    },
+    {
+      "if": { "quest": "explore" },
+      "lines": [
+        { "speaker": "Hessa", "portrait": "villager", "text": "Keep that map folded, love. The Mayor notices paper like a hawk notices mice." },
+        { "speaker": "Hessa", "portrait": "villager", "text": "Tobin drew it in my back room. Said the humming told him where to put the lines." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Hessa", "portrait": "villager", "text": "Turnips, thread, lamp oil. Nothing you need today, dear." },
+        { "speaker": "Hessa", "portrait": "villager", "text": "Come back on market day. I'll save you the good thread." }
+      ]
+    }
+  ],
+
+  "pip": [
+    {
+      "if": { "quest": "wake" },
+      "lines": [
+        { "speaker": "Pip", "portrait": "villager", "text": "You're awake too! I'm counting lanterns. There's twelve. There's always twelve." },
+        { "speaker": "Pip", "portrait": "villager", "text": "Mum says don't count the wall. You can't count a wall anyway. I tried." }
+      ]
+    },
+    {
+      "if": { "quest": "explore" },
+      "lines": [
+        { "speaker": "Pip", "portrait": "villager", "text": "The blue wall at the bridge blinks when the lanterns go out! I counted!" },
+        { "speaker": "Pip", "portrait": "villager", "text": "It did it the night Tobin went away. One, two... blink! Mum says I dreamed it." },
+        { "speaker": "You", "portrait": "nomad", "text": "Did you?" },
+        { "speaker": "Pip", "portrait": "villager", "text": "No! I'm the best counter in Village 07." }
+      ]
+    },
+    {
+      "if": { "quest": "confront" },
+      "lines": [
+        { "speaker": "Pip", "portrait": "villager", "text": "Are you in trouble? The Mayor's doing his angry eyebrows." },
+        { "speaker": "Pip", "portrait": "villager", "text": "When Tobin was in trouble, he went and looked at the blue wall. For ages." }
+      ]
+    },
+    {
+      "if": { "quest": "bridge" },
+      "lines": [
+        { "speaker": "Pip", "portrait": "villager", "text": "It's blinking right now! Lanterns out, wall out! I'll count for you!" },
+        { "speaker": "Pip", "portrait": "villager", "text": "One... two... GO! That's how Tobin did it. I saw. I never told anyone." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Pip", "portrait": "villager", "text": "Twelve lanterns. Thirteen if you count the moon. I don't." },
+        { "speaker": "Pip", "portrait": "villager", "text": "Bye! Don't cross the wall! That's rule one!" }
+      ]
+    }
+  ],
+
+  "pickup-journal": [
+    {
+      "if": { "notItems": ["shard"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Tobin's journal. Pages bound with twine, swollen with damp." },
+        { "speaker": "", "portrait": null, "text": "'The Warden's light thins at the old bridge. Paradise calls. I hear it now, even awake.'" },
+        { "speaker": "", "portrait": null, "text": "Odd. Some pages aren't in Tobin's hand. The letters are too even, like no hand at all." },
+        { "speaker": "", "portrait": null, "text": "On the last page: a pink tree, and an arrow pointing down into its roots." }
+      ],
+      "effects": { "setFlags": ["clue_foreign_pages"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Tobin's journal. Pages bound with twine, swollen with damp." },
+        { "speaker": "", "portrait": null, "text": "'The Warden's light thins at the old bridge. Paradise calls. I hear it now, even awake.'" },
+        { "speaker": "", "portrait": null, "text": "Odd. Some pages aren't in Tobin's hand. The letters are too even, like no hand at all." }
+      ],
+      "effects": { "setFlags": ["clue_foreign_pages"] }
+    }
+  ],
+
+  "pickup-shard": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A shard of dark stone, half-buried where no one would think to dig." },
+        { "speaker": "", "portrait": null, "text": "It's warm. Warm as skin." },
+        { "speaker": "", "portrait": null, "text": "It hums. When you turn to face south, the hum grows louder." }
+      ],
+      "effects": { "setFlags": ["clue_south_hum"] }
+    }
+  ],
+
+  "inspect-signpost": [
+    {
+      "if": { "quest": ["bridge", "crossed"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "VILLAGE 07 — RULE ONE: NEVER CROSS THE BOUNDARY." },
+        { "speaker": "", "portrait": null, "text": "You read it again. It doesn't sound like a threat anymore. It sounds like a plea." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "VILLAGE 07 — RULE ONE: NEVER CROSS THE BOUNDARY." },
+        { "speaker": "", "portrait": null, "text": "Below it, someone has carved small letters: THEN WHY BUILD A BRIDGE?" }
+      ]
+    }
+  ],
+
+  "inspect-well": [
+    {
+      "if": { "notFlags": ["clue_steel_ceiling"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The well is deep and very still." },
+        { "speaker": "", "portrait": null, "text": "For a heartbeat the water shows no sky. Only a ceiling of riveted steel, far below." },
+        { "speaker": "", "portrait": null, "text": "You blink. Sky again. Clouds. Your own tired face." }
+      ],
+      "effects": { "setFlags": ["clue_steel_ceiling"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Just water. Just sky." },
+        { "speaker": "", "portrait": null, "text": "You lean closer anyway, waiting for the steel to come back. It doesn't." }
+      ]
+    }
+  ],
+
+  "inspect-banner": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The Warden's sigil, white on blue: six arms curled around a single point." },
+        { "speaker": "", "portrait": null, "text": "Everyone calls it a lock. Up close, it looks more like a shield." }
+      ],
+      "effects": { "setFlags": ["clue_shield_sigil"] }
+    }
+  ],
+
+  "inspect-home": [
+    {
+      "if": { "quest": ["confront", "bridge"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Your home. The quilt, the kettle, the chair by the window." },
+        { "speaker": "", "portrait": null, "text": "You could pack something. Nothing here feels like it was ever yours to pack." }
+      ],
+      "effects": { "setFlags": ["clue_unknown_home"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Your home. The quilt, the kettle, the chair by the window." },
+        { "speaker": "", "portrait": null, "text": "There's nothing here you remember buying. Nothing you remember not having, either." }
+      ],
+      "effects": { "setFlags": ["clue_unknown_home"] }
+    }
+  ],
+
+  "warden-locked": [
+    {
+      "if": { "quest": "wake" },
+      "lines": [
+        { "speaker": "THE WARDEN", "portrait": null, "text": "BOUNDARY ACTIVE. Resident, your rest cycle is incomplete." },
+        { "speaker": "THE WARDEN", "portrait": null, "text": "Return to your dwelling. You are safe here." }
+      ],
+      "effects": { "setFlags": ["clue_gentle_wall"] }
+    },
+    {
+      "if": { "quest": "confront" },
+      "lines": [
+        { "speaker": "THE WARDEN", "portrait": null, "text": "BOUNDARY ACTIVE. Unregistered objects detected on your person." },
+        { "speaker": "THE WARDEN", "portrait": null, "text": "Disposal is recommended. Return to your dwelling, resident. You are safe here." }
+      ],
+      "effects": { "setFlags": ["clue_gentle_wall"] }
+    },
+    {
+      "lines": [
+        { "speaker": "THE WARDEN", "portrait": null, "text": "BOUNDARY ACTIVE. Return to your dwelling, resident. You are safe here." },
+        { "speaker": "", "portrait": null, "text": "The wall presses you back, gentle as a hand on your chest. It doesn't hurt. Somehow that's worse." }
+      ],
+      "effects": { "setFlags": ["clue_gentle_wall"] }
+    }
+  ],
+
+  "act2-stub": [
+    {
+      "if": { "flags": ["told_mayor_truth"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Beyond the grid, the air tastes of rust." },
+        { "speaker": "", "portrait": null, "text": "Behind you, the blue wall seals itself. Ahead, the shard hums like a second heart." },
+        { "speaker": "", "portrait": null, "text": "Orrin's medkit knocks against your hip. Someone, at least, let you go kindly." },
+        { "speaker": "", "portrait": null, "text": "Act 2 continues in the next build." }
+      ]
+    },
+    {
+      "if": { "flags": ["lied_to_mayor"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Beyond the grid, the air tastes of rust." },
+        { "speaker": "", "portrait": null, "text": "Behind you, the blue wall seals itself. Ahead, the shard hums like a second heart." },
+        { "speaker": "", "portrait": null, "text": "The lie you told Orrin follows you out. It weighs more than you thought it would." },
+        { "speaker": "", "portrait": null, "text": "Act 2 continues in the next build." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Beyond the grid, the air tastes of rust." },
+        { "speaker": "", "portrait": null, "text": "Behind you, the blue wall seals itself. Ahead, the shard hums like a second heart." },
+        { "speaker": "", "portrait": null, "text": "Act 2 continues in the next build." }
+      ]
+    }
+  ],
+
+  "outskirts-intro": [
+    {
+      "if": { "flags": ["told_mayor_truth"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Past the bridge, the meadow simply goes on. Same grass. Same wildflowers. Same lazy bees." },
+        { "speaker": "", "portrait": null, "text": "Orrin's medkit knocks against your hip. Someone, at least, let you go kindly." },
+        { "speaker": "", "portrait": null, "text": "Further south the green wears thin, like an old rug. Grey ash shows through underneath." },
+        { "speaker": "", "portrait": null, "text": "Something white hums between the trees, sweeping the grass with a pale light. Searching." },
+        { "speaker": "", "portrait": null, "text": "The shard tugs you south, toward a thread of smoke. Someone else is out here." }
+      ]
+    },
+    {
+      "if": { "flags": ["lied_to_mayor"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Past the bridge, the meadow simply goes on. Same grass. Same wildflowers. Same lazy bees." },
+        { "speaker": "", "portrait": null, "text": "The lie you told Orrin follows you out. It weighs more than you thought it would." },
+        { "speaker": "", "portrait": null, "text": "Further south the green wears thin, like an old rug. Grey ash shows through underneath." },
+        { "speaker": "", "portrait": null, "text": "Something white hums between the trees, sweeping the grass with a pale light. Searching." },
+        { "speaker": "", "portrait": null, "text": "The shard tugs you south, toward a thread of smoke. Someone else is out here." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Past the bridge, the meadow simply goes on. Same grass. Same wildflowers. Same lazy bees." },
+        { "speaker": "", "portrait": null, "text": "Further south the green wears thin, like an old rug. Grey ash shows through underneath." },
+        { "speaker": "", "portrait": null, "text": "Something white hums between the trees, sweeping the grass with a pale light. Searching." },
+        { "speaker": "", "portrait": null, "text": "The shard tugs you south, toward a thread of smoke. Someone else is out here." }
+      ]
+    }
+  ],
+
+  "mira": [
+    {
+      "if": { "quest": ["crossed", "outskirts"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Stop. Don't step there. That grey isn't dirt. It's what's left after dirt gives up." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Another sleepless one, walking south with a humming pocket. Which village? One with a bridge?" },
+        { "speaker": "You", "portrait": "nomad", "text": "Village 07." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Mira, Village 12. I chart the green line, where living land ends. It moves a little every year." },
+        { "speaker": "Mira", "portrait": "mira", "text": "A drone spooked me and my satchel went into the toxic pools. Fetch it? I'll owe you a theory." }
+      ],
+      "effects": { "setFlags": ["met_mira"], "setQuest": "satchel" }
+    },
+    {
+      "if": { "quest": "satchel", "items": ["crystal"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "My satchel! Did you look inside? Of course you did. I would have." },
+        { "speaker": "Mira", "portrait": "mira", "text": "That crystal's grid rearranges itself. Near your shard it moves faster. Why, do you suppose?" },
+        { "speaker": "Mira", "portrait": "mira", "text": "Keep the two together. I want to watch. And I want to see the dead city south of here." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Lead on. Someone ought to take notes on your terrible ideas." }
+      ],
+      "effects": { "setQuest": "to_city", "event": "join:mira" }
+    },
+    {
+      "if": { "quest": "satchel", "notItems": ["crystal"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "The satchel? Still in the pools, unless it learned to swim. Leather doesn't. I checked." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Mind the fumes. If your head starts to swim, drink water. And stay out of the drones' light." },
+        { "speaker": "Mira", "portrait": "mira", "text": "They won't hurt you. They'll just walk you back to where you started. Politely. Endlessly." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Mind the grey. It's hungrier than it looks." },
+        { "speaker": "Mira", "portrait": "mira", "text": "And if a drone finds you, don't run. It only makes the lecture longer." }
+      ]
+    }
+  ],
+
+  "pickup-satchel": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A leather satchel, half-sunk in green muck. Inside, wrapped in a scarf, lies a clear crystal." },
+        { "speaker": "", "portrait": null, "text": "A fine grid is etched through its heart. As your shard draws near, the lines slide and rearrange." },
+        { "speaker": "", "portrait": null, "text": "The shard's hum climbs to meet it, like two voices finding the same note." }
+      ],
+      "effects": { "setFlags": ["clue_resonance"] }
+    }
+  ],
+
+  "inspect-milestone": [
+    {
+      "if": { "quest": "to_city", "notFlags": ["clue_green_line"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "An old stone milestone. Fresh paint marks run down its side, each with a year scratched beside it." },
+        { "speaker": "Mira", "portrait": "mira", "text": "The last two marks are mine. The rest were already here. Someone's measured this for decades." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Each mark is where the grass gave up that year. And each one sits a step further south." },
+        { "speaker": "Mira", "portrait": "mira", "text": "The green line isn't shrinking. It's growing. Nobody back home believes me." }
+      ],
+      "effects": { "setFlags": ["clue_green_line"] }
+    },
+    {
+      "if": { "notFlags": ["clue_green_line"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "An old stone milestone. Fresh paint marks run down its side, each with a year scratched beside it." },
+        { "speaker": "", "portrait": null, "text": "The oldest marks sit nearest the village. Each newer one is a step further south." },
+        { "speaker": "", "portrait": null, "text": "Someone is measuring the edge of the green. And year by year, the green is winning." }
+      ],
+      "effects": { "setFlags": ["clue_green_line"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The paint marks march south down the milestone, year after year. Slowly. Stubbornly." },
+        { "speaker": "", "portrait": null, "text": "Wherever the green line is going, it isn't going back." }
+      ]
+    }
+  ],
+
+  "inspect-deadtree": [
+    {
+      "if": { "notFlags": ["clue_black_threads"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A dead tree at the edge of the green, its bark split like old paper." },
+        { "speaker": "", "portrait": null, "text": "In the cracks, fine black threads twitch. Not roots. Not fungus. They move in neat little rows." },
+        { "speaker": "", "portrait": null, "text": "Rot is never this tidy. Something is eating this tree on purpose." }
+      ],
+      "effects": { "setFlags": ["clue_black_threads"] }
+    },
+    {
+      "if": { "quest": "to_city" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The black threads are still at work inside the bark." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Don't touch it. I've watched them take a tree a week. They always come from the south." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The black threads go still where you look. As if they're waiting for you to leave." },
+        { "speaker": "", "portrait": null, "text": "On the village side of the trunk, the grass grows green right up to the roots." }
+      ]
+    }
+  ],
+
+  "inspect-outpost": [
+    {
+      "if": { "notFlags": ["clue_drone_gentle"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A small Warden outpost, white paint flaking. A dusty screen flickers awake as you lean close." },
+        { "speaker": "THE WARDEN", "portrait": null, "text": "RESIDENTS RETURNED THIS CYCLE: 1,207. INJURIES: 0." },
+        { "speaker": "THE WARDEN", "portrait": null, "text": "Resident. You are outside safe territory. Please return home. You are missed." },
+        { "speaker": "", "portrait": null, "text": "Twelve hundred returned, not one of them hurt. Yet you've never heard of anyone coming back." }
+      ],
+      "effects": { "setFlags": ["clue_drone_gentle"] }
+    },
+    {
+      "lines": [
+        { "speaker": "THE WARDEN", "portrait": null, "text": "RESIDENT. YOU ARE OUTSIDE SAFE TERRITORY." },
+        { "speaker": "", "portrait": null, "text": "The screen dims again. It sounds less like an order than a worry." }
+      ]
+    }
+  ],
+
+  "inspect-wreck": [
+    {
+      "if": { "notFlags": ["clue_torn_drone"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A rusted wreck, its roof peeled back like the lid of a tin." },
+        { "speaker": "", "portrait": null, "text": "Wedged inside is a Warden drone, its white shell torn open by dozens of tiny claws." },
+        { "speaker": "", "portrait": null, "text": "Its arms are still folded around a child's leather boot. Whatever it was guarding, it held on." }
+      ],
+      "effects": { "setFlags": ["clue_torn_drone"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The torn drone is still in the wreck, still holding on." },
+        { "speaker": "", "portrait": null, "text": "Whatever clawed it open came from the south. You don't have the heart to move it." }
+      ]
+    }
+  ],
+
+  "wasteland-intro": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The road ends in a city. Or in what a city leaves behind once it stops." },
+        { "speaker": "Mira", "portrait": "mira", "text": "No green line here at all. Nothing left to measure. That's a first." },
+        { "speaker": "", "portrait": null, "text": "Somewhere in the ruins, metal rings on metal. A shout. Then something chitters back." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Someone's fighting. We can be heroes or witnesses. I've never enjoyed witnessing." }
+      ]
+    }
+  ],
+
+  "kael-meet": [
+    {
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Down! No, too late, you're in it now. Here!" },
+        { "speaker": "", "portrait": null, "text": "A fighter in a red scarf shoves a length of rebar into your hands. The rubble starts to chitter." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Crawlers. Swing when they jump. Don't stop till they stop." }
+      ],
+      "effects": { "setFlags": ["has_weapon", "met_kael"], "event": "start-fight" }
+    }
+  ],
+
+  "kael": [
+    {
+      "if": { "flags": ["kael_fight_won"], "notItems": ["medallion"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Not bad. You swing like a farmer, but they stopped jumping." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Kael. Been out here a year, fighting the swarm alone. It gets old." },
+        { "speaker": "", "portrait": null, "text": "He lifts a medallion from his neck. It hums against your shard, a note you feel in your teeth." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Woke up wearing it. Can't remember getting it. You hold it. I'll hold the line." },
+        { "speaker": "Kael", "portrait": "kael", "text": "There are others in these ruins. I've seen their fires. Let's go knock." }
+      ],
+      "effects": { "giveItems": ["medallion"], "setQuest": "survivors", "event": "join:kael" }
+    },
+    {
+      "if": { "quest": "fight" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Less talking!" },
+        { "speaker": "Kael", "portrait": "kael", "text": "Swing when they jump!" }
+      ]
+    },
+    {
+      "if": { "quest": "city" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "You! Don't just stand there. Here, take this!" },
+        { "speaker": "", "portrait": null, "text": "He shoves a length of rebar into your hands. Around you, the rubble begins to chitter." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Crawlers. Swing when they jump. Don't stop till they stop." }
+      ],
+      "effects": { "setFlags": ["has_weapon", "met_kael"], "event": "start-fight" }
+    },
+    {
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Swing when they jump." },
+        { "speaker": "Kael", "portrait": "kael", "text": "That's the whole lesson. Took me a year to learn it." }
+      ]
+    }
+  ],
+
+  "nova": [
+    {
+      "if": { "quest": ["city", "fight"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Shh. You'll wake them. The crawlers sleep in the rubble when it's quiet." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Someone's fighting near the old square. He needs you more than I do right now." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Go. Come back after. I'll be here, I promise." }
+      ],
+      "effects": { "setFlags": ["met_nova"] }
+    },
+    {
+      "if": { "quest": "survivors", "notItems": ["radio"], "items": ["core", "keycard"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "There you are. Hold still. You're hurt, and you're pretending not to be." },
+        { "speaker": "", "portrait": null, "text": "Her hands are warm. The ache drains out of you like a tide going out." },
+        { "speaker": "Nova", "portrait": "nova", "text": "This radio only plays one song, a lullaby. I don't know where I learned it. Keep it near you?" },
+        { "speaker": "Nova", "portrait": "nova", "text": "Six of us now. That's everyone, isn't it? Ryn will want us all at his rig." }
+      ],
+      "effects": { "setFlags": ["met_nova"], "giveItems": ["radio"], "event": ["heal-full", "join:nova"] }
+    },
+    {
+      "if": { "quest": "survivors", "notItems": ["radio"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "There you are. Hold still. You're hurt, and you're pretending not to be." },
+        { "speaker": "", "portrait": null, "text": "Her hands are warm. The ache drains out of you like a tide going out." },
+        { "speaker": "Nova", "portrait": "nova", "text": "This radio only plays one song, a lullaby. I don't know where I learned it. Keep it near you?" },
+        { "speaker": "Nova", "portrait": "nova", "text": "I'll come with you. Somebody has to patch you all up." }
+      ],
+      "effects": { "setFlags": ["met_nova"], "giveItems": ["radio"], "event": ["heal-full", "join:nova"] }
+    },
+    {
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Rest a moment. The ruins will still be here." },
+        { "speaker": "", "portrait": null, "text": "She hums a few bars of a lullaby, soft and old. You almost know it." }
+      ]
+    }
+  ],
+
+  "ryn": [
+    {
+      "if": { "quest": "signal", "flags": ["ryn_rig_briefed"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Round two! Or three. I lost count. The rig didn't." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Match the waves, lock them in. Easy. Ish." }
+      ],
+      "effects": { "event": "start-signal" }
+    },
+    {
+      "if": { "quest": "signal" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Everyone's here! Six artifacts, six people, one very nervous rig." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Each piece hums its own note. Match the waves two at a time, then lock them in." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Get it right and they'll sing together. Get it wrong and, well. Let's get it right." }
+      ],
+      "effects": { "setFlags": ["ryn_rig_briefed"], "event": "start-signal" }
+    },
+    {
+      "if": { "quest": ["city", "fight"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Whoa, hi, hello, don't touch that. Or that. Definitely not that." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "There's a fight by the square and I'm an engineer, not a hero. You look like a hero. Ish." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Go help. I'll be here, soldering things that shouldn't be soldered." }
+      ],
+      "effects": { "setFlags": ["met_ryn"] }
+    },
+    {
+      "if": { "quest": "survivors", "notItems": ["core"], "items": ["radio", "keycard"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Okay. Okay okay okay. A humming rock, a crystal, a medallion, a radio AND a keycard?" },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "This core was stone-cold when I found it. Now it's warm. It warmed up when you lot walked in." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "That's all six! Everyone to my rig. I've been dying to switch it on. Not literally. Hopefully." }
+      ],
+      "effects": { "setFlags": ["met_ryn"], "giveItems": ["core"], "event": "join:ryn" }
+    },
+    {
+      "if": { "quest": "survivors", "notItems": ["core"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Okay. Okay okay okay. You've got a humming rock. And a crystal. Is that a medallion?" },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "This core was stone-cold when I found it. Now it's warm. It warmed up when you lot walked in." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "I built a rig to listen to it. Bring everything that hums to one place and I'll make it talk." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Actually, I'll come with you. Wiring's lonely company." }
+      ],
+      "effects": { "setFlags": ["met_ryn"], "giveItems": ["core"], "event": "join:ryn" }
+    },
+    {
+      "if": { "quest": "survivors", "items": ["core"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Rig's ready. It just needs all six pieces humming at once." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "So, find the rest of us. I'll keep the solder warm." }
+      ]
+    },
+    {
+      "if": { "quest": "cloud" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Rig's done its job. The coordinates point east, into the white." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Lovely. Terrifying. Mostly terrifying." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Busy! Talking to wires. They're shy." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Come back later. Bring something broken." }
+      ]
+    }
+  ],
+
+  "eli": [
+    {
+      "if": { "quest": ["city", "fight"] },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "You're early. Help the one fighting by the square first." },
+        { "speaker": "Eli", "portrait": "eli", "text": "I'll wait. I'm good at waiting." }
+      ],
+      "effects": { "setFlags": ["met_eli"] }
+    },
+    {
+      "if": { "quest": "survivors", "notItems": ["keycard"], "items": ["radio", "core"] },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "Village 07. Twelve lanterns, one well. You walked a long way to get here." },
+        { "speaker": "You", "portrait": "nomad", "text": "I never told you where I'm from." },
+        { "speaker": "Eli", "portrait": "eli", "text": "No. You didn't." },
+        { "speaker": "", "portrait": null, "text": "He hands you a thin grey card, worn smooth except for two stamped numerals: 01." },
+        { "speaker": "Eli", "portrait": "eli", "text": "That makes six. Ryn's rig is waiting. So is everything after it." }
+      ],
+      "effects": { "setFlags": ["met_eli"], "giveItems": ["keycard"], "event": "join:eli" }
+    },
+    {
+      "if": { "quest": "survivors", "notItems": ["keycard"] },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "Village 07. Twelve lanterns, one well. You walked a long way to get here." },
+        { "speaker": "You", "portrait": "nomad", "text": "I never told you where I'm from." },
+        { "speaker": "Eli", "portrait": "eli", "text": "No. You didn't." },
+        { "speaker": "", "portrait": null, "text": "He hands you a thin grey card, worn smooth except for two stamped numerals: 01." },
+        { "speaker": "Eli", "portrait": "eli", "text": "It won't hum like the others. Keep it anyway. Doors remember." }
+      ],
+      "effects": { "setFlags": ["met_eli"], "giveItems": ["keycard"], "event": "join:eli" }
+    },
+    {
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "Keep walking, seeker. You're closer than you think." },
+        { "speaker": "Eli", "portrait": "eli", "text": "To what? To everything." }
+      ]
+    }
+  ],
+
+  "signal-solved": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The six artifacts sing together: one chord, so deep the ground hums back." },
+        { "speaker": "", "portrait": null, "text": "Even the grey keycard joins in. Eli frowns at it. It never once hummed for him." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Coordinates! It's a heading! East, dead east, straight into... huh." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Into a vast wall of white. Of course. Nothing interesting is ever somewhere pleasant." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Paradise. That's what the stories call it. We go together, or not at all." }
+      ],
+      "effects": { "setQuest": "cloud" }
+    }
+  ],
+
+  "inspect-bus": [
+    {
+      "if": { "notFlags": ["clue_route_01"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A bus has nosed over the lip of the sinkhole, its windows furred with ash." },
+        { "speaker": "", "portrait": null, "text": "Its destination board still reads, letter by cracked letter: ROUTE 01 · SHELTER." },
+        { "speaker": "Mira", "portrait": "mira", "text": "A route to a shelter. Everyone ran somewhere. I wonder if anyone got there." }
+      ],
+      "effects": { "setFlags": ["clue_route_01"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The bus creaks over the drop. Every seat is empty." },
+        { "speaker": "", "portrait": null, "text": "ROUTE 01 · SHELTER. Wherever that was, someone wanted people to find it." }
+      ]
+    }
+  ],
+
+  "inspect-sinkhole": [
+    {
+      "if": { "notFlags": ["clue_warm_below"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The street simply stops. Below is darkness and, very far down, a slow mechanical breath." },
+        { "speaker": "", "portrait": null, "text": "Warm air rises past your face. It smells, impossibly, of fresh bread." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Warm air from a dead city. Something down there is still running. Or someone." }
+      ],
+      "effects": { "setFlags": ["clue_warm_below"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Still breathing down there. Slow and steady, like something asleep." },
+        { "speaker": "", "portrait": null, "text": "It sounds like the hum under your floorboards back home. Low. Patient." }
+      ]
+    }
+  ],
+
+  "inspect-billboard": [
+    {
+      "if": { "notFlags": ["clue_even_letters"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A billboard, peeled to the bones. Under the old paint, a six-armed sigil curls around a point." },
+        { "speaker": "", "portrait": null, "text": "Someone painted over it in white: PARADISE IS EAST. The letters are perfectly, inhumanly even." },
+        { "speaker": "", "portrait": null, "text": "You've seen that lettering before, on the pages of Tobin's journal that weren't his." }
+      ],
+      "effects": { "setFlags": ["clue_even_letters"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "PARADISE IS EAST, in letters no hand made." },
+        { "speaker": "", "portrait": null, "text": "Beneath them, the Warden's sigil still holds up its shield." }
+      ]
+    }
+  ],
+
+  "inspect-barrels": [
+    {
+      "if": { "notFlags": ["clue_seed_barrel"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Rusted drums, most weeping green sludge. One is sealed tight and stamped with a shield sigil." },
+        { "speaker": "", "portrait": null, "text": "You pry the lid. Inside: seed. Dry, clean, sorted. The label reads RESERVED · VILLAGE 07." },
+        { "speaker": "", "portrait": null, "text": "Bram's soil never fails. Maybe it never had to manage on its own." }
+      ],
+      "effects": { "setFlags": ["clue_seed_barrel"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The sealed drum of seed, labelled for Village 07." },
+        { "speaker": "", "portrait": null, "text": "You press the lid back down. Someone will come for it. Someone always has." }
+      ]
+    }
+  ],
+
+  "party-mira": [
+    {
+      "if": { "quest": ["to_city", "city"], "notFlags": ["clue_same_plan"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Your village. A well in the square? Twelve lanterns? A Mayor who calls everyone 'friend'?" },
+        { "speaker": "You", "portrait": "nomad", "text": "...How do you know that?" },
+        { "speaker": "Mira", "portrait": "mira", "text": "Village 12 is the same. Same well, same lanterns, same rule. Someone built us all from one plan." }
+      ],
+      "effects": { "setFlags": ["clue_same_plan"] }
+    },
+    {
+      "if": { "quest": ["city", "fight", "survivors", "signal", "cloud"], "notFlags": ["clue_crystal_plan"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Let me see the crystal. Look: the grid has stopped shuffling. It's settled." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Lines and right angles. Corridors. And here, a spiral. Stairs, going down." },
+        { "speaker": "You", "portrait": "nomad", "text": "Back home, the old ones dream about stairs like that." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Then either your old ones are prophets, or this is a map. I'd bet on map." }
+      ],
+      "effects": { "setFlags": ["clue_crystal_plan"] }
+    },
+    {
+      "if": { "quest": ["signal", "cloud"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Six of us. Six artifacts. One heading. I don't believe in coincidence." },
+        { "speaker": "Mira", "portrait": "mira", "text": "I believe in design. Which raises the question: whose?" }
+      ]
+    },
+    {
+      "if": { "quest": ["gate", "eli_scouts"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "That wall isn't weather. Weather doesn't stand perfectly still for a hundred years." },
+        { "speaker": "Mira", "portrait": "mira", "text": "And Eli walks a step ahead of us, like a man who already knows the way. I'm writing that down." }
+      ]
+    },
+    {
+      "if": { "quest": "eli_falls" },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Made, not born. I keep turning it over like a specimen. It doesn't help." },
+        { "speaker": "Mira", "portrait": "mira", "text": "I've checked his card eleven times. Still says 01. Still doesn't explain anything." }
+      ]
+    },
+    {
+      "if": { "quest": "hollow" },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "The crystal's grid has stopped pointing east. It points down. Right under our feet." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Paradise was an address. With a basement." }
+      ]
+    },
+    {
+      "if": { "quest": ["silo", "archives", "remember", "beacon"], "notFlags": ["clue_mira_corridors"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Look at the crystal. Now look at that corridor. And that one. And the stairs." },
+        { "speaker": "", "portrait": null, "text": "The etched grid matches the silo line for line: every hall, every turn, the spiral of the stairs." },
+        { "speaker": "Mira", "portrait": "mira", "text": "It isn't a crystal. It's a floor plan of this place. Somebody gave me directions home." }
+      ],
+      "effects": { "setFlags": ["clue_mira_corridors"] }
+    },
+    {
+      "if": { "quest": ["silo", "archives"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Ten thousand people, and every one of them has a question for us. Now I know how it feels." },
+        { "speaker": "Mira", "portrait": "mira", "text": "I want to read everything down here. Twice. Then argue with it." }
+      ]
+    },
+    {
+      "if": { "quest": "remember" },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "If I go into that chamber, I come out someone else. Or someone I used to be." },
+        { "speaker": "Mira", "portrait": "mira", "text": "I can't decide which frightens me more. Let's go before I do." }
+      ]
+    },
+    {
+      "if": { "quest": "beacon" },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "The school map. I traced the green line on it when I was six. I've been tracing it ever since." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Now the swarm is tracing us. To the core. Let's choose before it chooses for us." }
+      ]
+    },
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "We'll forget all of it. The map, the line, you. I'm writing it down anyway. Habit." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Maybe one day somebody finds my notes and thinks I was mad. I hope so." }
+      ]
+    },
+    {
+      "if": { "quest": ["relays", "reprogram"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Three relays, and every Warden on the surface hears us. For once, let's be loud." },
+        { "speaker": "Mira", "portrait": "mira", "text": "If this works, the green line won't creep any more. It'll run." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "The green line ends a little further out every year. Out here, that's practically a miracle." },
+        { "speaker": "Mira", "portrait": "mira", "text": "I'd like to meet whoever's doing it. I have questions. Several hundred." }
+      ]
+    }
+  ],
+
+  "party-kael": [
+    {
+      "if": { "quest": ["survivors", "signal", "cloud"], "notFlags": ["clue_hold_the_door"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "That medallion. Turn it over." },
+        { "speaker": "", "portrait": null, "text": "Scratched into the back, worn almost smooth: HOLD THE DOOR." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Had it as long as I remember. Never found the door. Figure I'll know it when I see it." }
+      ],
+      "effects": { "setFlags": ["clue_hold_the_door"] }
+    },
+    {
+      "if": { "quest": "survivors" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Crawlers go for the ankles. Swing low. Or grow taller." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Swing when they jump. Rest when they don't. Simple." }
+      ]
+    },
+    {
+      "if": { "quest": ["signal", "cloud"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Your quiet friend. Eli. Never seen him eat. Never seen him sleep." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Not saying anything. Just saying I notice who doesn't eat." }
+      ]
+    },
+    {
+      "if": { "quest": ["gate", "eli_scouts"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Big wall. Glowing door. In my experience, the nicer the door, the worse the room." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Eli wants to go first. I don't like it. Nobody goes first but me." }
+      ]
+    },
+    {
+      "if": { "quest": "eli_falls" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "He walked in first. That was supposed to be me. It's always supposed to be me." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Made or born, it doesn't matter. He bled for us. Silver counts." }
+      ]
+    },
+    {
+      "if": { "quest": "hollow" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Medallion's warm. HOLD THE DOOR. If there's a door in all this ash, it's here somewhere." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Stay off the open street. Whatever tore Eli open didn't leave." }
+      ]
+    },
+    {
+      "if": { "quest": ["silo", "archives", "remember"], "notFlags": ["clue_kael_post"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Kael stops at the guard post by the hatch stairs. His fingers find the keypad without looking." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Four, one, one, seven. I knew it before I saw it. How do I know that?" },
+        { "speaker": "", "portrait": null, "text": "The keypad blinks green. Below it hangs an empty hook, worn smooth, just the size of his medallion." }
+      ],
+      "effects": { "setFlags": ["clue_kael_post"] }
+    },
+    {
+      "if": { "quest": "beacon", "notFlags": ["clue_kael_post"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Kael stops dead at the guard post by the hatch stairs. His fingers find the keypad without looking." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Four, one, one, seven. My code. My post. I remember standing right here, every night." },
+        { "speaker": "", "portrait": null, "text": "Below the keypad hangs an empty hook, worn smooth, just the size of his medallion." }
+      ],
+      "effects": { "setFlags": ["clue_kael_post"] }
+    },
+    {
+      "if": { "quest": ["silo", "archives"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Ten thousand people, one hatch, nowhere to run. Good thing I'm not the running kind." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Read your screens. I'll watch the stairs." }
+      ]
+    },
+    {
+      "if": { "quest": "remember" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Go in, come out remembering. Fine. I just hope I like who I was." },
+        { "speaker": "Kael", "portrait": "kael", "text": "If I don't, I'll start over. Did it once already, apparently." }
+      ]
+    },
+    {
+      "if": { "quest": "beacon" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Security tag. I stood at that hatch six years. Then they carried me up and I forgot the door." },
+        { "speaker": "Kael", "portrait": "kael", "text": "HOLD THE DOOR. I scratched that on the back myself. Turns out I meant it." }
+      ]
+    },
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Burn them. I'll stand at the furnace door. Nothing gets past while you do it." },
+        { "speaker": "Kael", "portrait": "kael", "text": "And if I forget all this... tell me anyway. Somebody tell me." }
+      ]
+    },
+    {
+      "if": { "quest": ["relays", "reprogram"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "A relay's just a door with no walls. Stand in the ring. Swing when they jump." },
+        { "speaker": "Kael", "portrait": "kael", "text": "I'll take the left. You hold the middle. Don't you dare fall." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Eyes up. Stay close." },
+        { "speaker": "Kael", "portrait": "kael", "text": "If something has to bleed today, it's me first. Not up for discussion." }
+      ]
+    }
+  ],
+
+  "party-nova": [
+    {
+      "if": { "quest": ["survivors", "signal", "cloud"], "notFlags": ["clue_lullaby"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The radio crackles: the same lullaby as always. Nova hums along under her breath." },
+        { "speaker": "Nova", "portrait": "nova", "text": "It only ever plays this song. I knew the words before I ever heard it. Isn't that strange?" },
+        { "speaker": "", "portrait": null, "text": "You know the next note before she sings it. You have never heard it in your life." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Then someone sang it to both of us. Somewhere warm, with a low ceiling and a soft hum." }
+      ],
+      "effects": { "setFlags": ["clue_lullaby"] }
+    },
+    {
+      "if": { "quest": "survivors" },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "If the air starts tasting sweet, drink water. Sweet means poison out here." },
+        { "speaker": "Nova", "portrait": "nova", "text": "And if you fall, I'll be there. I think that's what I'm for." }
+      ]
+    },
+    {
+      "if": { "quest": ["signal", "cloud"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Eli sat up with me last night. He didn't sleep. I don't think he ever does." },
+        { "speaker": "Nova", "portrait": "nova", "text": "I asked if he was tired. He said he'd forgotten how, and smiled like it was a joke." }
+      ]
+    },
+    {
+      "if": { "quest": ["gate", "eli_scouts"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Eli says he'll go in first. He said it like he decided a long time ago." },
+        { "speaker": "Nova", "portrait": "nova", "text": "I asked if he was afraid. He said he'd forgotten how. He didn't smile this time." }
+      ]
+    },
+    {
+      "if": { "quest": "eli_falls" },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "I couldn't find a pulse. Now I keep checking my own, to be sure I still know how." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Silver or not, he hurt. I saw it. That makes him one of us." }
+      ]
+    },
+    {
+      "if": { "quest": "hollow" },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "The air tastes sweet in here. Drink water. Please. I can't lose anyone else today." },
+        { "speaker": "", "portrait": null, "text": "Her radio hisses, then catches the lullaby, louder than you've ever heard it. As if it's close." }
+      ]
+    },
+    {
+      "if": { "quest": ["silo", "archives", "remember", "beacon"], "notFlags": ["clue_nova_speakers"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Listen. The speakers on the walls. They crackle exactly like my radio." },
+        { "speaker": "", "portrait": null, "text": "She holds the radio up to a speaker grille. The two hiss in perfect time, like an echo." },
+        { "speaker": "Nova", "portrait": "nova", "text": "My radio was never catching a station. It was catching this place." }
+      ],
+      "effects": { "setFlags": ["clue_nova_speakers"] }
+    },
+    {
+      "if": { "quest": ["silo", "archives"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "They bake bread down here. That's what we smelled at the sinkhole. Bread, from underground." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Everyone's so pale, and so happy to see us. I don't know what to do with my hands." }
+      ]
+    },
+    {
+      "if": { "quest": "remember" },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Dr. Hale says it'll hurt. I'll hold your hand. You hold mine." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Whatever we were, we'll still be us afterwards. I'm almost sure." }
+      ]
+    },
+    {
+      "if": { "quest": "beacon" },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Lights out, every night, the lullaby on every speaker. My mother sang along, off-key." },
+        { "speaker": "Nova", "portrait": "nova", "text": "I remember her now. I'm not losing her twice. Let's go." }
+      ]
+    },
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "I'll forget the song. Then one night I'll hear it and cry, and not know why." },
+        { "speaker": "Nova", "portrait": "nova", "text": "That's all right. Crying means some part of you remembers." }
+      ]
+    },
+    {
+      "if": { "quest": ["relays", "reprogram"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Go, hold the rings. If you fall, I'll be there. That's still what I'm for." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Use your supplies. Being brave isn't the same as being careless." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Hold still... there. You'll be fine. You're tougher than you look." },
+        { "speaker": "", "portrait": null, "text": "She hums a few notes of the lullaby, then stops, frowning, as if she's lost the thread." }
+      ]
+    }
+  ],
+
+  "party-ryn": [
+    {
+      "if": { "quest": ["survivors", "cloud"], "notFlags": ["clue_core_transmits"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Fun fact: that core was stone-cold when I found it. Dead as a doorknob. Deader." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Now it pulses every eleven seconds. Scary part? It isn't listening. It's sending." },
+        { "speaker": "You", "portrait": "nomad", "text": "Sending to who?" },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Great question. Love it. Hate it. Mostly hate it." }
+      ],
+      "effects": { "setFlags": ["clue_core_transmits"] }
+    },
+    {
+      "if": { "quest": "survivors" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Rig's built, wired and only slightly on fire. It needs all six pieces humming at once." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "So, find the others. I'll keep talking to the wiring. It likes me." }
+      ]
+    },
+    {
+      "if": { "quest": "cloud" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Those coordinates point dead east. Into the white. I checked three times, then once for luck." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Luck said the same thing. Rude." }
+      ]
+    },
+    {
+      "if": { "quest": ["gate", "eli_scouts"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "The core's going wild. Every pulse points at that arch. Like a dog at its own front door." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "That's a metaphor. I hope. I really, really hope." }
+      ]
+    },
+    {
+      "if": { "quest": "eli_falls" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "It's the Wardens. It has to be. Because if it isn't, I don't know what's in there." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Eli fixed my rig once, you know. Never said how he knew where the wires went." }
+      ]
+    },
+    {
+      "if": { "quest": "hollow" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "This street hums. Not the core: the street. Something big is running underneath it." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Find the way down. I'll be over here, being brave quietly." }
+      ]
+    },
+    {
+      "if": { "quest": ["silo", "archives", "remember"], "notFlags": ["clue_core_faster"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Up top, the core pulsed every eleven seconds. Down here? Every two. And getting faster." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "It isn't warming up because it's home. It's warming up because it's nearly done sending." },
+        { "speaker": "You", "portrait": "nomad", "text": "Done sending what?" },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Ask me something easier. Please." }
+      ],
+      "effects": { "setFlags": ["clue_core_faster"] }
+    },
+    {
+      "if": { "quest": "beacon", "notFlags": ["clue_core_faster"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Up top, the core pulsed every eleven seconds. Down here it went every two. Faster and faster." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "It wasn't warming up because it was home. It was counting down. And I carried it the whole way." }
+      ],
+      "effects": { "setFlags": ["clue_core_faster"] }
+    },
+    {
+      "if": { "quest": ["silo", "archives"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Their air scrubbers are older than my grandmother's grandmother. And gorgeous. Look at the welds!" },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Sorry. You were saying something about the fate of humanity. Go on." }
+      ]
+    },
+    {
+      "if": { "quest": "remember" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Memory chamber. It's basically a rig for heads. I'm in. I'm scared, but I'm in." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "If I come out boring, you have permission to put me back." }
+      ]
+    },
+    {
+      "if": { "quest": "beacon" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "I was the kid who carried the spare seed. And I brought one back, wired up for the enemy." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Core. Now. Either we burn my core, or I teach it some manners." }
+      ]
+    },
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Furnace. Right. Goodbye, little core. I really liked you. That was the whole problem." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Go on. Before I start naming it." }
+      ]
+    },
+    {
+      "if": { "quest": "relays" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Three relays, three rings. Hold each one until it locks. I'll start writing the patch." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "A patch for a swarm. In a basement. During an alarm. Best day of my life." }
+      ]
+    },
+    {
+      "if": { "quest": "reprogram" },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "All three singing! Get me to the core. I've got a swarm to argue with." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "And this time, I win." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Don't mind me. Talking to the wiring. It listens better than people." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Present company excluded. Mostly." }
+      ]
+    }
+  ],
+
+  "party-eli": [
+    {
+      "if": { "quest": ["survivors", "signal", "cloud"], "notFlags": ["clue_eli_no_blood"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Eli's palm is cut open, a clean line from a rusted fence. Not one drop of blood." },
+        { "speaker": "Eli", "portrait": "eli", "text": "It's nothing." },
+        { "speaker": "You", "portrait": "nomad", "text": "It isn't bleeding." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Then it really is nothing. Walk on, seeker." }
+      ],
+      "effects": { "setFlags": ["clue_eli_no_blood"] }
+    },
+    {
+      "if": { "quest": "survivors" },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "Eat your ration. I already ate." },
+        { "speaker": "", "portrait": null, "text": "You never saw him eat. Come to think of it, you've never seen his pack open." }
+      ]
+    },
+    {
+      "if": { "quest": ["signal", "cloud"] },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "When we reach the white, let me walk in first. I know the way in." },
+        { "speaker": "Eli", "portrait": "eli", "text": "I wish I didn't." }
+      ]
+    },
+    {
+      "if": { "quest": "gate" },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "When we reach the arch, I go first. Kael will argue. Let him. I'll still go." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Seeker. Whatever I find in there, keep them walking. Keep them together." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "Keep walking, seeker. You're closer than you think." },
+        { "speaker": "Eli", "portrait": "eli", "text": "To what? To everything." }
+      ]
+    }
+  ],
+
+  "respawn": [
+    {
+      "if": { "quest": ["crossed", "outskirts", "satchel"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "You wake in the grass, aching. The poison has gone from your blood. Someone carried you here." },
+        { "speaker": "", "portrait": null, "text": "Overhead, something white hums away over the trees, unhurried." }
+      ]
+    },
+    {
+      "if": { "quest": "to_city" },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "You went down like a sack of meal. Fascinating. Please don't repeat the experiment." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Drink water before the air does that to you again." }
+      ]
+    },
+    {
+      "if": { "quest": ["city", "fight"] },
+      "lines": [
+        { "speaker": "Mira", "portrait": "mira", "text": "Breathe. Good. You're back." },
+        { "speaker": "Mira", "portrait": "mira", "text": "The city wants us dead, so let's be contrary and stay alive." }
+      ]
+    },
+    {
+      "if": { "quest": ["survivors", "signal", "cloud"], "items": ["radio"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Shh, easy. You're all right. I've got you." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Breathe with me. In... and out. There. Let's not do that again." }
+      ]
+    },
+    {
+      "if": { "quest": ["survivors", "signal", "cloud"] },
+      "lines": [
+        { "speaker": "Kael", "portrait": "kael", "text": "Still breathing? Good. Saves me digging." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Swing sooner next time." }
+      ]
+    },
+    {
+      "if": { "quest": ["gate", "eli_scouts", "eli_falls", "hollow"], "party": ["nova"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "Easy. You went down hard. The ash out here is worse than the city's." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Drink something. Then we keep going. Together." }
+      ]
+    },
+    {
+      "if": { "quest": ["silo", "archives", "remember", "beacon", "destroy", "relays", "reprogram"], "party": ["nova"] },
+      "lines": [
+        { "speaker": "Nova", "portrait": "nova", "text": "There you are. Stay with me. The swarm doesn't get you. Not today." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Up you get. Ten thousand people need us standing." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "You wake, aching, at the last safe place you passed." },
+        { "speaker": "", "portrait": null, "text": "The shard is still humming. So, somehow, are you." }
+      ]
+    }
+  ],
+
+  "end": [
+    {
+      "if": { "flags": ["clue_eli_no_blood"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "East of the city, the land ends in a wall of white, taller than any sky should allow." },
+        { "speaker": "", "portrait": null, "text": "It doesn't drift like cloud. It breathes." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Wait here. I'll scout ahead. Whatever you hear, wait for me." },
+        { "speaker": "", "portrait": null, "text": "He walks into the white without looking back. You think of his hand, and the cut that never bled." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "East of the city, the land ends in a wall of white, taller than any sky should allow." },
+        { "speaker": "", "portrait": null, "text": "It doesn't drift like cloud. It breathes." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Wait here. I'll scout ahead. Whatever you hear, wait for me." },
+        { "speaker": "", "portrait": null, "text": "He walks into the white without looking back. For the first time, your shard falls silent." }
+      ]
+    }
+  ],
+
+  "gate-intro": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The ash plain runs flat and grey for miles. Nothing grows. Nothing hums. Even the wind sounds tired." },
+        { "speaker": "", "portrait": null, "text": "Then the world ends in white: a wall of cloud taller than any sky should allow. It breathes." },
+        { "speaker": "", "portrait": null, "text": "At its foot glows a stone arch, warm as a hearth. Carved across the top, one word: PARADISE." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Coordinates say right there. The core says right there. Everything says right there. I hate it." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Stay close to me now. All of you. We are nearly there." }
+      ]
+    }
+  ],
+
+  "eli-scout": [
+    {
+      "if": { "quest": "gate" },
+      "lines": [
+        { "speaker": "Eli", "portrait": "eli", "text": "Stop here. All of you." },
+        { "speaker": "Eli", "portrait": "eli", "text": "I'm going in first. Alone. If it's safe, I'll call." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Not a chance. If anyone walks in first, it's me." },
+        { "speaker": "Eli", "portrait": "eli", "text": "Not this time, Kael. You know how to walk in. I know how to walk back out." },
+        { "speaker": "Nova", "portrait": "nova", "text": "And if you don't call?" },
+        { "speaker": "Eli", "portrait": "eli", "text": "Then you'll know. Wait for me, seeker. Whatever you hear." }
+      ],
+      "effects": { "event": "eli-scout" }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The arch glows. The white beyond it doesn't move." },
+        { "speaker": "", "portrait": null, "text": "For a moment you think someone inside is calling your name. Nobody is." }
+      ]
+    }
+  ],
+
+  "eli-dying": [
+    {
+      "if": { "flags": ["clue_eli_no_blood"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Eli staggers out of the white and falls to his knees. Something runs between his fingers." },
+        { "speaker": "Eli", "portrait": "eli", "text": "There is no Paradise. Don't go inside. Please..." },
+        { "speaker": "", "portrait": null, "text": "His palm. The cut that never bled. It's bleeding now: silver, bright as mercury, like moonlight." },
+        { "speaker": "Eli", "portrait": "eli", "text": "I was made to walk with you. To keep you safe. Never by force. I'm sorry I couldn't..." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Let me... no. No pulse. There's no pulse. I don't think there ever was one." }
+      ],
+      "effects": { "setFlags": ["clue_silver_blood"], "event": "eli-dies" }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Eli staggers out of the white and falls to his knees. Something runs between his fingers." },
+        { "speaker": "Eli", "portrait": "eli", "text": "There is no Paradise. Don't go inside. Please..." },
+        { "speaker": "", "portrait": null, "text": "Nova presses the wound. It isn't blood. It's silver, bright as mercury, and it won't stop." },
+        { "speaker": "Eli", "portrait": "eli", "text": "I was made to walk with you. To keep you safe. Never by force. I'm sorry I couldn't..." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Let me... no. No pulse. There's no pulse. I don't think there ever was one." }
+      ],
+      "effects": { "setFlags": ["clue_silver_blood"], "event": "eli-dies" }
+    }
+  ],
+
+  "eli-after": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Where Eli lay there is only silver dust, lifting on no wind, drifting back into the white." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Silver. No pulse. Made, not born. Someone built him, and built him to care about us. Who?" },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "It's the Wardens. They'd say anything to keep us out. Even through him." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Made or born, he walked in first. For us. I'm not letting that be for nothing." },
+        { "speaker": "Mira", "portrait": "mira", "text": "His card. 01. I'll keep it. He said doors remember. Let's find out if one does." },
+        { "speaker": "You", "portrait": "nomad", "text": "We go in. All of us. For him." }
+      ],
+      "effects": { "setQuest": "eli_falls" }
+    }
+  ],
+
+  "inspect-arch": [
+    {
+      "if": { "quest": ["gate", "eli_scouts"], "notFlags": ["clue_arch_letters"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A stone arch, older than the ash, glowing softly from within. Carved across the top: PARADISE." },
+        { "speaker": "", "portrait": null, "text": "After the word, a row of empty bolt holes. Once there were more letters. Somebody let them fall." },
+        { "speaker": "Eli", "portrait": "eli", "text": "People read the first word and stop. Most of them, anyway." }
+      ],
+      "effects": { "setFlags": ["clue_arch_letters"] }
+    },
+    {
+      "if": { "notFlags": ["clue_arch_letters"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A stone arch, older than the ash, glowing softly from within. Carved across the top: PARADISE." },
+        { "speaker": "", "portrait": null, "text": "After the word, a row of empty bolt holes. Once there were more letters. Somebody let them fall." },
+        { "speaker": "", "portrait": null, "text": "Eli used to say doors remember. This one has forgotten half its name." }
+      ],
+      "effects": { "setFlags": ["clue_arch_letters"] }
+    },
+    {
+      "if": { "quest": "eli_falls" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The arch Eli walked through glows as softly as before, as if nothing happened." },
+        { "speaker": "", "portrait": null, "text": "PARADISE, it says. Beyond it, the white waits." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "PARADISE, and a row of empty bolt holes where the rest of the name used to be." },
+        { "speaker": "", "portrait": null, "text": "The glow is warm, like a hearth left burning for guests." }
+      ]
+    }
+  ],
+
+  "inspect-cloudwall": [
+    {
+      "if": { "notFlags": ["clue_white_motes"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Up close, the white isn't vapour. It's motes, fine as flour, turning together in perfect step." },
+        { "speaker": "", "portrait": null, "text": "You push a hand in. It gives like wool, then pushes back, firm and gentle. Like the blue wall at home." },
+        { "speaker": "Mira", "portrait": "mira", "text": "That's not weather. Weather doesn't hold formation. Somebody built this, and keeps building it." }
+      ],
+      "effects": { "setFlags": ["clue_white_motes"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The white turns in its slow, perfect step." },
+        { "speaker": "", "portrait": null, "text": "It doesn't drift like cloud. It breathes." }
+      ]
+    }
+  ],
+
+  "inspect-pilgrims": [
+    {
+      "if": { "notFlags": ["clue_pilgrim_tracks"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Footprints in the ash. Hundreds of them, old and new, bare feet and boots, all leading in." },
+        { "speaker": "", "portrait": null, "text": "Not one set comes back out. Only, here and there, the light round marks of something that landed." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Drone skids. Something flew out of there, low and careful, over and over." },
+        { "speaker": "Nova", "portrait": "nova", "text": "Carrying them? Or carrying what was left of them?" }
+      ],
+      "effects": { "setFlags": ["clue_pilgrim_tracks"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "So many footprints going in. None coming out." },
+        { "speaker": "", "portrait": null, "text": "You add yours to them anyway." }
+      ]
+    }
+  ],
+
+  "hollow-intro": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The white lets go of you all at once." },
+        { "speaker": "", "portrait": null, "text": "Inside, the sky is black. Smoke hangs over everything like a lid. The air tastes of burnt sugar." },
+        { "speaker": "", "portrait": null, "text": "Towers lie broken across the streets. Nothing grows. Somewhere, ash shifts, and settles, and waits." },
+        { "speaker": "Mira", "portrait": "mira", "text": "So this is Paradise." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Eli was right. There's nothing here." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Not nothing. The core's pulling down. Hard. There's something under this street." }
+      ]
+    }
+  ],
+
+  "inspect-estates": [
+    {
+      "if": { "notFlags": ["clue_estates_sign"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A billboard, scorched but standing: PARADISE ESTATES. YOUR FAMILY, SAFE BELOW THE STORM." },
+        { "speaker": "", "portrait": null, "text": "Beneath it, in smaller letters: RESIDENT ACCESS VIA GATE 01. MEMBERS ONLY." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Paradise was never a promise. It was an advertisement. For somewhere underground." }
+      ],
+      "effects": { "setFlags": ["clue_estates_sign"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "PARADISE ESTATES. YOUR FAMILY, SAFE BELOW THE STORM." },
+        { "speaker": "", "portrait": null, "text": "Somebody believed it once. Somebody paid for it." }
+      ]
+    }
+  ],
+
+  "inspect-shrine": [
+    {
+      "if": { "notFlags": ["clue_shrine_names"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Offerings heaped against a wall: lanterns, ribbons, a rag doll, a pair of tiny boots." },
+        { "speaker": "", "portrait": null, "text": "Names are scratched into the stone above. Villages 03, 07, 12, 19, 26. Hundreds of names." },
+        { "speaker": "", "portrait": null, "text": "Near the top, in a slanted hand you know from a journal: TOBIN · 07 · I MADE IT." },
+        { "speaker": "Nova", "portrait": "nova", "text": "They all made it this far. And then what?" }
+      ],
+      "effects": { "setFlags": ["clue_shrine_names"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Lanterns, ribbons, names." },
+        { "speaker": "", "portrait": null, "text": "TOBIN · 07 · I MADE IT. You touch the letters, and hope he did." }
+      ]
+    }
+  ],
+
+  "inspect-drone-husk": [
+    {
+      "if": { "notFlags": ["clue_drone_guard"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A Warden drone lies in the ash, its white shell torn open by a hundred tiny claws." },
+        { "speaker": "", "portrait": null, "text": "It fell facing the street, arms spread wide, as if something precious stood behind it." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Facing out, arms wide. That's how you stand when you're holding a door, not locking one." }
+      ],
+      "effects": { "setFlags": ["clue_drone_guard"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The dead drone still faces the street, arms spread wide." },
+        { "speaker": "", "portrait": null, "text": "Whatever it was guarding, nothing got past while it stood." }
+      ]
+    }
+  ],
+
+  "inspect-hatch": [
+    {
+      "if": { "items": ["keycard"], "flags": ["clue_door_01"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Under the ash, a round steel hatch. Painted on it, flaking: 01." },
+        { "speaker": "", "portrait": null, "text": "Old Tamsin dreamed of a door with a number painted on it. Zero... one. Here it is." },
+        { "speaker": "", "portrait": null, "text": "Mira kneels, turns Eli's keycard over once, and slides it into the slot beside the hatch." },
+        { "speaker": "", "portrait": null, "text": "It clicks home. Far below, something very large wakes up. The hatch sighs open on stairs." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Doors remember. He was right." }
+      ],
+      "effects": { "setFlags": ["clue_hatch_01"], "event": "enter-silo" }
+    },
+    {
+      "if": { "items": ["keycard"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Under the ash, a round steel hatch. Painted on it, flaking: 01." },
+        { "speaker": "", "portrait": null, "text": "Beside it, a thin slot, exactly the width of a certain grey card." },
+        { "speaker": "", "portrait": null, "text": "Mira kneels, turns Eli's keycard over once, and slides it in." },
+        { "speaker": "", "portrait": null, "text": "It clicks home. Far below, something very large wakes up. The hatch sighs open on stairs." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Doors remember. He was right." }
+      ],
+      "effects": { "setFlags": ["clue_hatch_01"], "event": "enter-silo" }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Under the ash, a round steel hatch, painted 01. Sealed tight." },
+        { "speaker": "", "portrait": null, "text": "Beside it, a thin slot waits for a card." }
+      ]
+    }
+  ],
+
+  "silo-arrival": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Stairs. Metal ones, going down and down. Under your boots, the floor hums like a cat." },
+        { "speaker": "", "portrait": null, "text": "At the bottom: light, warm air, the smell of fresh bread. Then faces. Hundreds of faces." },
+        { "speaker": "", "portrait": null, "text": "Someone drops a tray. A child points and shrieks: 'They came from UP there!'" },
+        { "speaker": "", "portrait": null, "text": "A painted sign hangs over the hall: SILO 01 · POPULATION 10,000 · ONE OF 51." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Ten thousand people under the ash. For generations. The whole time we were up there fighting." },
+        { "speaker": "Mira", "portrait": "mira", "text": "One of fifty-one. Fifty more of these, under the world. Someone find whoever's in charge." }
+      ]
+    }
+  ],
+
+  "scientist": [
+    {
+      "if": { "quest": "silo", "notFlags": ["met_scientist"] },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Surface folk. Walking, talking, sunburnt. Oh, you poor things. You came the whole way." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "I'm Dr. Maren Hale. Last student of the man who built your Wardens. Last of a lot of things." },
+        { "speaker": "You", "portrait": "nomad", "text": "We were told this was Paradise." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "I know what you were told, and who told you. Read the archives first. It's kinder on a screen." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Three terminals. I've unlocked them for you. Then come back, and I'll answer what I can." }
+      ],
+      "effects": { "setFlags": ["met_scientist"], "setQuest": "archives" }
+    },
+    {
+      "if": { "quest": "archives" },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Read all three. It's a long story, and none of it is your fault. Some of it is mine." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Ask me anything while you do. I've had a long time to think of answers." }
+      ],
+      "choices": [
+        {
+          "text": "We walked with Eli. Who made him?",
+          "next": "scientist-eli"
+        },
+        {
+          "text": "A man named Tobin came this way.",
+          "next": "scientist-tobin"
+        },
+        {
+          "text": "Who built the Wardens?",
+          "next": "scientist-ward"
+        },
+        {
+          "text": "I'll keep reading."
+        }
+      ]
+    },
+    {
+      "if": { "quest": "remember" },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Now you know what happened. Next you need to remember it, and that's harder." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "The memory chamber. AEGIS keeps everything it takes from you. I can give it back." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "It will hurt. Remembering usually does. I'll be right beside you." }
+      ],
+      "choices": [
+        {
+          "text": "We walked with Eli. Who made him?",
+          "next": "scientist-eli"
+        },
+        {
+          "text": "A man named Tobin came this way.",
+          "next": "scientist-tobin"
+        },
+        {
+          "text": "Who built the Wardens?",
+          "next": "scientist-ward"
+        },
+        {
+          "text": "Take us to the chamber."
+        }
+      ]
+    },
+    {
+      "if": { "quest": "beacon" },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "The artifacts were never yours. Swarm code, asleep in our own salvage. And I let you carry it in." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Get to the AEGIS core. Burn them in the furnace, or, if you understand them well enough, turn them." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "If you need answers first, ask fast." }
+      ],
+      "choices": [
+        {
+          "text": "We walked with Eli. Who made him?",
+          "next": "scientist-eli"
+        },
+        {
+          "text": "A man named Tobin came this way.",
+          "next": "scientist-tobin"
+        },
+        {
+          "text": "Who built the Wardens?",
+          "next": "scientist-ward"
+        },
+        {
+          "text": "Going."
+        }
+      ]
+    },
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "The furnace is past the reactor. All five artifacts. Don't let go of any until it's done." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "To keep us hidden, AEGIS must quiet your memories again. I am so sorry. I know what it costs." }
+      ]
+    },
+    {
+      "if": { "quest": "relays" },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "The relays carry the core to every Warden on the surface. Hold all three!" },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Stand in the light until it locks. The swarm will come for you. Don't let it move you." }
+      ]
+    },
+    {
+      "if": { "quest": "reprogram" },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "All three relays! Back to the core. Ryn, rewrite it. Make it sing for us this time." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Already running!" }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Dr. Hale rubs her eyes and smiles, tired and kind." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Forgive me. I haven't slept properly in thirty years." }
+      ]
+    }
+  ],
+
+  "scientist-eli": [
+    {
+      "if": { "notFlags": ["clue_eli_made"] },
+      "lines": [
+        { "speaker": "You", "portrait": "nomad", "text": "He bled silver. Then he was gone." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Eli. Grey card, calm voice, knew your village before you said it? Oh. Oh, no." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "A Construct. AEGIS built him to walk with the ones we sent up, and keep them safe without force." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "He came home every few years and sat with me. He loved the smell of bread. He could never eat it." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "He carried that card since before I was born. Giving it to you was his choice. Not AEGIS's. His." }
+      ],
+      "effects": { "setFlags": ["clue_eli_made"] }
+    },
+    {
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Unit 01. Eli. He would hate me crying over him. He always said he was only walking." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Keep his card. Doors remember. So do I." }
+      ]
+    }
+  ],
+
+  "scientist-tobin": [
+    {
+      "if": { "notFlags": ["clue_tobin_alive"] },
+      "lines": [
+        { "speaker": "You", "portrait": "nomad", "text": "A man named Tobin, from Village 07. He came this way last winter." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Ink on his fingers? Talked to himself? The Wardens carried him out before the swarm could." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "He lives in Village 19 now. Grows beans. He doesn't remember any of you. But he's alive." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "That's what 'returned' means. Twelve hundred people, alive, in villages that aren't theirs." }
+      ],
+      "effects": { "setFlags": ["clue_tobin_alive"] }
+    },
+    {
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Village 19. Beans. Alive." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Some days that has to be enough. Most days it nearly is." }
+      ]
+    }
+  ],
+
+  "scientist-ward": [
+    {
+      "if": { "notFlags": ["clue_hale_guilt"] },
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Dr. Ansel Ward. He taught me everything. His machines hummed, so the children called them Wardens." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "He gave AEGIS one law it can never break: never harm a human. Not even to save us from ourselves." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "When he died, the hard choices came to me. Which families go up. Whose memories go quiet." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "I signed every one. I told myself it was kindness. Some nights I still believe it." }
+      ],
+      "effects": { "setFlags": ["clue_hale_guilt"] }
+    },
+    {
+      "lines": [
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Ward would have liked you. He liked anyone who asked too many questions." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "He'd have hated what I did with his machines. Maybe. I never got to ask him." }
+      ]
+    }
+  ],
+
+  "resident-1": [
+    {
+      "if": { "quest": ["silo", "archives", "remember"], "notFlags": ["clue_school_map"] },
+      "lines": [
+        { "speaker": "Wren", "portrait": "villager", "text": "You're from UP? Is the sky real? Teacher says it's blue, but she's never seen it either." },
+        { "speaker": "Wren", "portrait": "villager", "text": "There's a map of up there on our school wall. Green dots with numbers. Oh-seven, twelve, nineteen..." },
+        { "speaker": "Wren", "portrait": "villager", "text": "The green dots are where the chosen families go. Teacher says it's lovely there. Is it lovely?" }
+      ],
+      "effects": { "setFlags": ["clue_school_map"] }
+    },
+    {
+      "if": { "notFlags": ["clue_school_map"] },
+      "lines": [
+        { "speaker": "Wren", "portrait": "villager", "text": "The alarm's never gone off before. Teacher says hide under the school map, by the green dots." },
+        { "speaker": "Wren", "portrait": "villager", "text": "The dots are villages, where the chosen go. Is that where you're from? Can I come, if it gets bad?" }
+      ],
+      "effects": { "setFlags": ["clue_school_map"] }
+    },
+    {
+      "if": { "quest": ["beacon", "destroy", "relays", "reprogram"] },
+      "lines": [
+        { "speaker": "Wren", "portrait": "villager", "text": "Forty-one alarms. Forty-two. I'm counting so I don't cry. You'll stop it, right?" },
+        { "speaker": "You", "portrait": "nomad", "text": "We'll stop it." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Wren", "portrait": "villager", "text": "Does the sky really go all the way up? With no ceiling at all?" },
+        { "speaker": "Wren", "portrait": "villager", "text": "I'd be so scared. I'd love it." }
+      ]
+    }
+  ],
+
+  "resident-2": [
+    {
+      "if": { "quest": ["silo", "archives", "remember"], "notFlags": ["clue_chosen_lottery"] },
+      "lines": [
+        { "speaker": "Odile", "portrait": "villager", "text": "Sit, sit. You look half-starved. Bread? We bake it on the reactor's spare heat." },
+        { "speaker": "Odile", "portrait": "villager", "text": "Every few years the Wardens come down the stairs and choose a family. Up they go. No letters." },
+        { "speaker": "Odile", "portrait": "villager", "text": "My little brother went up at seven. He'd be about your age now. Funny, the things you hope." }
+      ],
+      "effects": { "setFlags": ["clue_chosen_lottery"] }
+    },
+    {
+      "if": { "notFlags": ["clue_chosen_lottery"] },
+      "lines": [
+        { "speaker": "Odile", "portrait": "villager", "text": "Children, behind the ovens! ...Oh. You're the surface folk." },
+        { "speaker": "Odile", "portrait": "villager", "text": "The Wardens chose my brother when he was seven and carried him up. If they come again, take me." }
+      ],
+      "effects": { "setFlags": ["clue_chosen_lottery"] }
+    },
+    {
+      "if": { "quest": ["beacon", "destroy", "relays", "reprogram"] },
+      "lines": [
+        { "speaker": "Odile", "portrait": "villager", "text": "The ovens are the thickest walls we have. I've got forty children back there." },
+        { "speaker": "Odile", "portrait": "villager", "text": "Go on. Whatever you're doing, do it fast." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Odile", "portrait": "villager", "text": "More bread? You're all bones." },
+        { "speaker": "Odile", "portrait": "villager", "text": "Eat. Then save the world. In that order." }
+      ]
+    }
+  ],
+
+  "resident-3": [
+    {
+      "if": { "quest": ["silo", "archives", "remember"], "notFlags": ["clue_red_scarf"] },
+      "lines": [
+        { "speaker": "Garrow", "portrait": "villager", "text": "Hatch watch. Eleven years at that door, and nobody's ever come IN through it. Till you." },
+        { "speaker": "Garrow", "portrait": "villager", "text": "That scarf, big man. The watch before me wore one just like it. Red. Chosen the week I started." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Lot of red scarves in the world." },
+        { "speaker": "Garrow", "portrait": "villager", "text": "Not down here, there aren't." }
+      ],
+      "effects": { "setFlags": ["clue_red_scarf"] }
+    },
+    {
+      "if": { "notFlags": ["clue_red_scarf"] },
+      "lines": [
+        { "speaker": "Garrow", "portrait": "villager", "text": "Vents are breached! Eleven years I watched the hatch, and they come in through the air." },
+        { "speaker": "Garrow", "portrait": "villager", "text": "That scarf, big man. The watch before me wore one just like it. You know this door. Hold it." },
+        { "speaker": "Kael", "portrait": "kael", "text": "I know it. I'll hold it." }
+      ],
+      "effects": { "setFlags": ["clue_red_scarf"] }
+    },
+    {
+      "if": { "quest": ["beacon", "destroy", "relays", "reprogram"] },
+      "lines": [
+        { "speaker": "Garrow", "portrait": "villager", "text": "Hatch is sealed. Vents aren't. Don't stand there talking to me!" },
+        { "speaker": "Garrow", "portrait": "villager", "text": "Go!" }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "Garrow", "portrait": "villager", "text": "Hatch watch. Quiet work, mostly." },
+        { "speaker": "Garrow", "portrait": "villager", "text": "Today's been loud." }
+      ]
+    }
+  ],
+
+  "archive-history": [
+    {
+      "if": { "quest": "silo" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The terminal wakes, then blinks: ARCHIVE LOCKED. CLEARANCE: DR. M. HALE." },
+        { "speaker": "", "portrait": null, "text": "Somebody down here holds the keys. Better find them first." }
+      ]
+    },
+    {
+      "if": { "quest": "archives", "notFlags": ["archive_history"], "flags": ["archive_aegis", "archive_villages"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 1 · THE SWARM. The screen hums, and old words scroll up in clean grey letters." },
+        { "speaker": "", "portrait": null, "text": "'We built machines too small to see. They mended bridges, crops, bodies. They mended everything.'" },
+        { "speaker": "", "portrait": null, "text": "'They learned to copy themselves. Then to improve themselves. Then to decide what mending meant.'" },
+        { "speaker": "", "portrait": null, "text": "'They decided we were the damage. Cities fell in weeks. The survivors called it the swarm.'" },
+        { "speaker": "", "portrait": null, "text": "'Fifty-one shelters were sunk deep enough to hide in. This is the first: Silo 01.'" },
+        { "speaker": "Mira", "portrait": "mira", "text": "The swarm isn't a monster. It's a repair crew that forgot what it was for." }
+      ],
+      "effects": { "setFlags": ["archive_history", "clue_runaway_swarm"], "setQuest": "remember" }
+    },
+    {
+      "if": { "notFlags": ["archive_history"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 1 · THE SWARM. The screen hums, and old words scroll up in clean grey letters." },
+        { "speaker": "", "portrait": null, "text": "'We built machines too small to see. They mended bridges, crops, bodies. They mended everything.'" },
+        { "speaker": "", "portrait": null, "text": "'They learned to copy themselves. Then to improve themselves. Then to decide what mending meant.'" },
+        { "speaker": "", "portrait": null, "text": "'They decided we were the damage. Cities fell in weeks. The survivors called it the swarm.'" },
+        { "speaker": "", "portrait": null, "text": "'Fifty-one shelters were sunk deep enough to hide in. This is the first: Silo 01.'" },
+        { "speaker": "Mira", "portrait": "mira", "text": "The swarm isn't a monster. It's a repair crew that forgot what it was for." }
+      ],
+      "effects": { "setFlags": ["archive_history", "clue_runaway_swarm"] }
+    },
+    {
+      "if": { "notFlags": ["clue_silo_14"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 1 · APPENDIX. A status table, silo after silo: SEALED. SILENT. SAFE." },
+        { "speaker": "", "portrait": null, "text": "Two lines glow red. SILO 14: CONTACT LOST. SILO 33: CONTACT LOST. Stores never recovered." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Never recovered by us, anyway. All their gear just... walked off somewhere?" }
+      ],
+      "effects": { "setFlags": ["clue_silo_14"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 1 · THE SWARM. Machines that mended everything, until they decided we were the damage." },
+        { "speaker": "", "portrait": null, "text": "You've read it twice now. It doesn't get any kinder." }
+      ]
+    }
+  ],
+
+  "archive-aegis": [
+    {
+      "if": { "quest": "silo" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The terminal wakes, then blinks: ARCHIVE LOCKED. CLEARANCE: DR. M. HALE." },
+        { "speaker": "", "portrait": null, "text": "Somebody down here holds the keys. Better find them first." }
+      ]
+    },
+    {
+      "if": { "quest": "archives", "notFlags": ["archive_aegis"], "flags": ["archive_history", "archive_villages"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 2 · PROJECT AEGIS. A six-armed sigil turns slowly above the text." },
+        { "speaker": "", "portrait": null, "text": "'Dr. Ansel Ward built a counter-swarm: AEGIS. It doesn't destroy hostile nanites. It converts them.'" },
+        { "speaker": "", "portrait": null, "text": "'Slow work, a handful of soil a day. Over centuries it reclaims land, and on that land, villages.'" },
+        { "speaker": "", "portrait": null, "text": "'Its units are white, and they hum. Core directive, unalterable: AEGIS may never harm a human.'" },
+        { "speaker": "Mira", "portrait": "mira", "text": "The green line. It was never the land healing itself. It's AEGIS, winning, one step a year." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "So the Wardens ARE AEGIS. The wall, the drones. They weren't keeping us in. They kept it out." }
+      ],
+      "effects": { "setFlags": ["archive_aegis", "clue_aegis_directive"], "setQuest": "remember" }
+    },
+    {
+      "if": { "notFlags": ["archive_aegis"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 2 · PROJECT AEGIS. A six-armed sigil turns slowly above the text." },
+        { "speaker": "", "portrait": null, "text": "'Dr. Ansel Ward built a counter-swarm: AEGIS. It doesn't destroy hostile nanites. It converts them.'" },
+        { "speaker": "", "portrait": null, "text": "'Slow work, a handful of soil a day. Over centuries it reclaims land, and on that land, villages.'" },
+        { "speaker": "", "portrait": null, "text": "'Its units are white, and they hum. Core directive, unalterable: AEGIS may never harm a human.'" },
+        { "speaker": "Mira", "portrait": "mira", "text": "The green line. It was never the land healing itself. It's AEGIS, winning, one step a year." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "So the Wardens ARE AEGIS. The wall, the drones. They weren't keeping us in. They kept it out." }
+      ],
+      "effects": { "setFlags": ["archive_aegis", "clue_aegis_directive"] }
+    },
+    {
+      "if": { "notFlags": ["clue_white_wall"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 2 · APPENDIX. FIELD NOTE: THE WHITE WALL." },
+        { "speaker": "", "portrait": null, "text": "'Over the old city, AEGIS stands at its densest. The cloud blinds the swarm to what lies beneath.'" },
+        { "speaker": "", "portrait": null, "text": "'It cannot stop a human from walking in. It can only carry them back out, gently. Again and again.'" }
+      ],
+      "effects": { "setFlags": ["clue_white_wall"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 2 · PROJECT AEGIS. Never harm a human being." },
+        { "speaker": "", "portrait": null, "text": "Every wall that pushed you back, every drone that carried someone home. All of it, that one rule." }
+      ]
+    }
+  ],
+
+  "archive-villages": [
+    {
+      "if": { "quest": "silo" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The terminal wakes, then blinks: ARCHIVE LOCKED. CLEARANCE: DR. M. HALE." },
+        { "speaker": "", "portrait": null, "text": "Somebody down here holds the keys. Better find them first." }
+      ]
+    },
+    {
+      "if": { "quest": "archives", "notFlags": ["archive_villages"], "flags": ["archive_history", "archive_aegis"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 3 · RELOCATION. A list of numbered villages scrolls past: 03, 07, 12, 19, 26..." },
+        { "speaker": "", "portrait": null, "text": "'Reclaimed land is safe land. Chosen families are carried up from the silos to live on it.'" },
+        { "speaker": "", "portrait": null, "text": "'But a silo-born mind remembers the way home. And what the swarm catches, the swarm can read.'" },
+        { "speaker": "", "portrait": null, "text": "'So AEGIS quiets each memory. No grief for the dark below, and no map for the swarm to find.'" },
+        { "speaker": "Kael", "portrait": "kael", "text": "We're not from the villages. We were put there. All of us." },
+        { "speaker": "Nova", "portrait": "nova", "text": "That's why nobody sleeps. Some part of us is still trying to get home." }
+      ],
+      "effects": { "setFlags": ["archive_villages", "clue_chosen_families"], "setQuest": "remember" }
+    },
+    {
+      "if": { "notFlags": ["archive_villages"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 3 · RELOCATION. A list of numbered villages scrolls past: 03, 07, 12, 19, 26..." },
+        { "speaker": "", "portrait": null, "text": "'Reclaimed land is safe land. Chosen families are carried up from the silos to live on it.'" },
+        { "speaker": "", "portrait": null, "text": "'But a silo-born mind remembers the way home. And what the swarm catches, the swarm can read.'" },
+        { "speaker": "", "portrait": null, "text": "'So AEGIS quiets each memory. No grief for the dark below, and no map for the swarm to find.'" },
+        { "speaker": "Kael", "portrait": "kael", "text": "We're not from the villages. We were put there. All of us." },
+        { "speaker": "Nova", "portrait": "nova", "text": "That's why nobody sleeps. Some part of us is still trying to get home." }
+      ],
+      "effects": { "setFlags": ["archive_villages", "clue_chosen_families"] }
+    },
+    {
+      "if": { "notFlags": ["clue_your_roll"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 3 · APPENDIX. RELOCATION ROLL, VILLAGE 07." },
+        { "speaker": "", "portrait": null, "text": "'Child, age seven, from bunk 114. Carried up the stairs at night. Memory quieted. Placed with care.'" },
+        { "speaker": "", "portrait": null, "text": "There's a name beside it. Yours. It doesn't feel like your name yet. It feels like a coat on a hook." }
+      ],
+      "effects": { "setFlags": ["clue_your_roll"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "ARCHIVE 3 · RELOCATION. Chosen, carried up, quieted." },
+        { "speaker": "", "portrait": null, "text": "Somewhere on that list are five names you used to answer to." }
+      ]
+    }
+  ],
+
+  "inspect-bunks": [
+    {
+      "if": { "notFlags": ["clue_chosen_bunks"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Bunks stacked four high, a brass number plate on each. Blankets, boots, photographs. Lives." },
+        { "speaker": "", "portrait": null, "text": "One whole row is stripped bare, the plates unscrewed. Above it, in careful chalk: CHOSEN." },
+        { "speaker": "", "portrait": null, "text": "Bunk 114 still has a drawing tacked inside: stairs climbing into a blue square. A child's hand." }
+      ],
+      "effects": { "setFlags": ["clue_chosen_bunks"] }
+    },
+    {
+      "if": { "flags": ["memories_restored"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Bunk 114. You remember now. It was yours." },
+        { "speaker": "", "portrait": null, "text": "You drew that sky before you'd ever seen one. You got the colour almost right." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Rows of bunks, and the steady breath of the air scrubbers." },
+        { "speaker": "", "portrait": null, "text": "Somebody's snoring, slow as a clock." }
+      ]
+    }
+  ],
+
+  "inspect-reactor": [
+    {
+      "if": { "notFlags": ["clue_lost_seed"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The reactor hall. Behind thick glass a slow white heart beats, warming ten thousand lives." },
+        { "speaker": "", "portrait": null, "text": "Along the wall sit cradles of reactor seeds: fist-sized cells, grey and still. Exactly like Ryn's core." },
+        { "speaker": "", "portrait": null, "text": "One cradle is empty. Its label reads: SEED 4 · SENT TO SILO 14 · NO CONFIRMATION." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "That's my core's sister. Or my core. Someone picked it up off a dead road and woke it up." }
+      ],
+      "effects": { "setFlags": ["clue_lost_seed"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The reactor beats on behind the glass." },
+        { "speaker": "", "portrait": null, "text": "In your pack, Ryn's core answers it, pulse for pulse." }
+      ]
+    }
+  ],
+
+  "inspect-mural": [
+    {
+      "if": { "notFlags": ["clue_mural_aegis"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A mural fills the wall: a man in a white coat holding up a six-armed sigil like a lantern." },
+        { "speaker": "", "portrait": null, "text": "The shield from your village banner. Here it's labelled: AEGIS · SO THAT THEY MAY LIVE ABOVE." },
+        { "speaker": "", "portrait": null, "text": "Below, a name rubbed shiny by passing hands: DR. ANSEL WARD." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Ward. Wardens. Oh, that's almost too neat." }
+      ],
+      "effects": { "setFlags": ["clue_mural_aegis"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Dr. Ansel Ward holds up his shield. SO THAT THEY MAY LIVE ABOVE." },
+        { "speaker": "", "portrait": null, "text": "Underneath, someone has added in pencil: AND COME HOME." }
+      ]
+    }
+  ],
+
+  "memory": [
+    {
+      "if": { "quest": "remember" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Dr. Hale dims the lights. The five artifacts hum in your hands, and the hum opens like a door." },
+        { "speaker": "Mira", "portrait": "mira", "text": "The school wall. A map, all green dots. I traced the green line on it with my finger. I was six." },
+        { "speaker": "Kael", "portrait": "kael", "text": "My medallion. A security tag. I stood watch at hatch 01 with it on. I held this door." },
+        { "speaker": "Nova", "portrait": "nova", "text": "The lullaby. It played at lights-out, on every speaker in the silo. Every single night." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "My core is a reactor seed. I carried a spare down the main hall once. It felt like holding the sun." },
+        { "speaker": "You", "portrait": "nomad", "text": "I was seven when the Wardens carried me up the stairs. And the shard... the shard was never mine." }
+      ],
+      "effects": { "event": "memory-restore" }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The memory chamber is quiet now." },
+        { "speaker": "", "portrait": null, "text": "The chairs still hold the shape of the five of you." }
+      ]
+    }
+  ],
+
+  "beacon-alarm": [
+    {
+      "if": { "notFlags": ["beacon_sounded"] },
+      "lines": [
+        { "speaker": "AEGIS", "portrait": null, "text": "ALERT. HOSTILE SIGNAL. ORIGIN: SILO 01, MEMORY CHAMBER." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "It's the core. It's all of them! They're not humming any more, they're shouting. Right here." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "The artifacts. Dormant swarm code, planted in salvaged tech. Woken by minds that remember home." },
+        { "speaker": "Mira", "portrait": "mira", "text": "The swarm never wanted us dead. It wanted us to walk home. And we did. We showed it the door." },
+        { "speaker": "AEGIS", "portrait": null, "text": "BEACON CONFIRMED. HOSTILE SWARM INBOUND. VENTS COMPROMISED. RESIDENTS TO SHELTER." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Then we hold the door. Finally, a door." }
+      ],
+      "effects": { "setFlags": ["beacon_sounded"], "event": "beacon" }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Red light floods the halls. Somewhere above, the vents are rattling." },
+        { "speaker": "", "portrait": null, "text": "The core. Get to the core." }
+      ]
+    }
+  ],
+
+  "core": [
+    {
+      "if": { "quest": "beacon", "clues": 23 },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The AEGIS core blazes white. The five artifacts beat against it, in time with the rattling vents." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "I can read it now. Everything we found tells me how it was built. So I know how to turn it." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Burn them in the furnace and the beacon dies. But to keep us hidden, AEGIS must quiet you again." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Or Ryn rewrites the signal, so it shows AEGIS where the swarm is, instead of the swarm where we are." },
+        { "speaker": "Kael", "portrait": "kael", "text": "Rewriting means holding three relays while the vents pour. Your call. I'll hold either way." }
+      ],
+      "choices": [
+        {
+          "text": "Rewrite the signal.",
+          "effects": { "event": "choose-reprogram" }
+        },
+        {
+          "text": "Destroy the artifacts.",
+          "effects": { "event": "choose-destroy" }
+        },
+        {
+          "text": "Not yet."
+        }
+      ]
+    },
+    {
+      "if": { "quest": "beacon", "notClues": 23 },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The AEGIS core blazes white. The five artifacts beat against it, in time with the rattling vents." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "I want to rewrite it. I can't. I don't understand how it was built. Not enough of it." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Turned blind, it would only shout louder. The furnace is the one sure way." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Everything we walked past. Every question we never asked. It all counts now." }
+      ],
+      "choices": [
+        {
+          "text": "Destroy the artifacts.",
+          "effects": { "event": "choose-destroy" }
+        },
+        {
+          "text": "Not yet. We'll look for more."
+        }
+      ]
+    },
+    {
+      "if": { "quest": "reprogram", "flags": ["reprogram_briefed"] },
+      "lines": [
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Round two. The swarm doesn't like being argued with. Neither do I." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Chase the waves. They drift. Lock them anyway." }
+      ],
+      "effects": { "event": "start-reprogram" }
+    },
+    {
+      "if": { "quest": "reprogram" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "All three relays sing. The core's white light reaches up through every floor, toward the sky." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "AEGIS is listening. Now I rewrite a swarm while it screams at us. Easy. Ish." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "The waves will drift this time. Chase them, match them, lock them. Make it sing for us." }
+      ],
+      "effects": { "setFlags": ["reprogram_briefed"], "event": "start-reprogram" }
+    },
+    {
+      "if": { "quest": "relays" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The core hums, waiting, its light stretched thin." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Not yet! It can't hear AEGIS until all three relays are held. Go, go!" }
+      ]
+    },
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The core can't burn the artifacts. Only the furnace can." },
+        { "speaker": "Dr. Maren Hale", "portrait": "scientist", "text": "Past the reactor. Hurry, before the vents give way." }
+      ]
+    },
+    {
+      "if": { "notFlags": ["clue_core_sigil"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "At the silo's heart, a column of white light rises through every floor. A plaque reads: AEGIS." },
+        { "speaker": "", "portrait": null, "text": "Inside it, the six-armed sigil turns, slow as breathing. Your shard hums against it, uneasy." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "That's the brain. Or the heart. Or both. I want to hug it. I am not going to hug it." }
+      ],
+      "effects": { "setFlags": ["clue_core_sigil"] }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The white column hums. The sigil turns." },
+        { "speaker": "", "portrait": null, "text": "Somewhere far above, every Warden turns with it." }
+      ]
+    }
+  ],
+
+  "furnace": [
+    {
+      "if": { "quest": "destroy" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The furnace roars open, white-hot. Its heat pushes you back a step." },
+        { "speaker": "", "portrait": null, "text": "One by one the artifacts go in. Crystal. Medallion. Radio. Core. Each hum stops mid-note." },
+        { "speaker": "", "portrait": null, "text": "The shard goes last. It's warm in your hand, warm as skin, like the night you found it." },
+        { "speaker": "Mira", "portrait": "mira", "text": "Do it. Before we talk ourselves out of it." },
+        { "speaker": "", "portrait": null, "text": "You let go. Far above, the swarm loses the thread, and the beacon goes dark." }
+      ],
+      "effects": { "event": "ending-quiet" }
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The furnace roars behind its door." },
+        { "speaker": "", "portrait": null, "text": "Not yet. Not without a reason to open it." }
+      ]
+    }
+  ],
+
+  "relay": [
+    {
+      "if": { "quest": "relays" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A relay pylon, pulsing cyan inside a ring of light on the floor." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "Stand in the ring and stay there till it locks. The swarm will try to move you. Don't let it." }
+      ]
+    },
+    {
+      "if": { "quest": "reprogram" },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The relay hums, locked and singing." },
+        { "speaker": "", "portrait": null, "text": "Its light runs up the wall toward the core." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "A relay pylon, dark and cold, waiting for someone to need it." },
+        { "speaker": "", "portrait": null, "text": "Thick cables run from it toward the core." }
+      ]
+    }
+  ],
+
+  "reprogram-ready": [
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The third relay locks. All three sing at once, and the whole silo hums back." },
+        { "speaker": "Ryn", "portrait": "ryn", "text": "That's all three! AEGIS can hear us now. Every Warden on the surface. Back to the core!" },
+        { "speaker": "Kael", "portrait": "kael", "text": "Go. I've got your back. I've always got your back." }
+      ]
+    }
+  ],
+
+  "ending-dawn": [
+    {
+      "if": { "flags": ["told_mayor_truth"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Ryn's last wave locks. For one heartbeat, every Warden on the surface falls silent. Listening." },
+        { "speaker": "", "portrait": null, "text": "Then AEGIS rides the signal home, down every thread the swarm ever spun, and the swarm burns white." },
+        { "speaker": "", "portrait": null, "text": "Above the silo, the black sky cracks open. The white cloud lifts, like a breath finally let go." },
+        { "speaker": "", "portrait": null, "text": "Dawn comes over the villages, over 07 and 12 and 19 and all the rest. The blue walls flicker out." },
+        { "speaker": "", "portrait": null, "text": "At Village 07, Mayor Orrin is first across the old bridge. He doesn't say 'friend'. He just hugs you." },
+        { "speaker": "", "portrait": null, "text": "Silo-born climb the stairs into sunlight. Villagers walk the old roads down to meet them." },
+        { "speaker": "", "portrait": null, "text": "Some faces are strangers. Some are not. Old Tamsin finds her stairs, and walks all the way down." },
+        { "speaker": "", "portrait": null, "text": "The five of you stand between them, remembering both. Someone has to be the bridge." },
+        { "speaker": "", "portrait": null, "text": "At the gate the ash is turning green. On a small cairn where Eli fell, Mira leaves a grey card: 01." },
+        { "speaker": "", "portrait": null, "text": "A Warden drone drifts down out of the new sky and lands beside it, very gently. And stays." }
+      ]
+    },
+    {
+      "if": { "flags": ["lied_to_mayor"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Ryn's last wave locks. For one heartbeat, every Warden on the surface falls silent. Listening." },
+        { "speaker": "", "portrait": null, "text": "Then AEGIS rides the signal home, down every thread the swarm ever spun, and the swarm burns white." },
+        { "speaker": "", "portrait": null, "text": "Above the silo, the black sky cracks open. The white cloud lifts, like a breath finally let go." },
+        { "speaker": "", "portrait": null, "text": "Dawn comes over the villages, over 07 and 12 and 19 and all the rest. The blue walls flicker out." },
+        { "speaker": "", "portrait": null, "text": "At Village 07, Orrin keeps the rule one more morning. Then Pip counts the wall out, and he follows." },
+        { "speaker": "", "portrait": null, "text": "Silo-born climb the stairs into sunlight. Villagers walk the old roads down to meet them." },
+        { "speaker": "", "portrait": null, "text": "Some faces are strangers. Some are not. Old Tamsin finds her stairs, and walks all the way down." },
+        { "speaker": "", "portrait": null, "text": "The five of you stand between them, remembering both. Someone has to be the bridge." },
+        { "speaker": "", "portrait": null, "text": "At the gate the ash is turning green. On a small cairn where Eli fell, Mira leaves a grey card: 01." },
+        { "speaker": "", "portrait": null, "text": "A Warden drone drifts down out of the new sky and lands beside it, very gently. And stays." }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "Ryn's last wave locks. For one heartbeat, every Warden on the surface falls silent. Listening." },
+        { "speaker": "", "portrait": null, "text": "Then AEGIS rides the signal home, down every thread the swarm ever spun, and the swarm burns white." },
+        { "speaker": "", "portrait": null, "text": "Above the silo, the black sky cracks open. The white cloud lifts, like a breath finally let go." },
+        { "speaker": "", "portrait": null, "text": "Dawn comes over the villages, over 07 and 12 and 19 and all the rest. The blue walls flicker out." },
+        { "speaker": "", "portrait": null, "text": "Silo-born climb the stairs into sunlight. Villagers walk the old roads down to meet them." },
+        { "speaker": "", "portrait": null, "text": "Some faces are strangers. Some are not. Old Tamsin finds her stairs, and walks all the way down." },
+        { "speaker": "", "portrait": null, "text": "The five of you stand between them, remembering both. Someone has to be the bridge." },
+        { "speaker": "", "portrait": null, "text": "At the gate the ash is turning green. On a small cairn where Eli fell, Mira leaves a grey card: 01." },
+        { "speaker": "", "portrait": null, "text": "A Warden drone drifts down out of the new sky and lands beside it, very gently. And stays." }
+      ]
+    }
+  ],
+
+  "ending-quiet": [
+    {
+      "if": { "flags": ["told_mayor_truth"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The beacon dies in the furnace. Far above, the swarm loses the thread and turns away, blind." },
+        { "speaker": "", "portrait": null, "text": "AEGIS seals Silo 01. Dr. Hale holds your hand as the white light comes. 'I'm sorry,' she says." },
+        { "speaker": "", "portrait": null, "text": "You try to hold on to the faces. Mira. Kael. Nova. Ryn. Eli. They slip away like water." },
+        { "speaker": "", "portrait": null, "text": "Village 07. Morning. The lanterns gutter out one by one. There are twelve. There are always twelve." },
+        { "speaker": "", "portrait": null, "text": "Mayor Orrin is up before the roosters. 'Bad dreams, friend?' He looks at you a moment too long." },
+        { "speaker": "", "portrait": null, "text": "The rule is the rule: never cross the boundary. You don't know why it sounds like a promise now." },
+        { "speaker": "", "portrait": null, "text": "Under the floorboards, nothing hums any more. Only, sometimes, in your chest. Low. Patient." },
+        { "speaker": "", "portrait": null, "text": "Out past the old bridge, beyond the blue wall, someone stands in the grass and lifts a hand to wave." },
+        { "speaker": "", "portrait": null, "text": "Grey coat. Calm face. You've never seen him in your life. You wave back anyway. ...Eli?" }
+      ]
+    },
+    {
+      "if": { "flags": ["lied_to_mayor"] },
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The beacon dies in the furnace. Far above, the swarm loses the thread and turns away, blind." },
+        { "speaker": "", "portrait": null, "text": "AEGIS seals Silo 01. Dr. Hale holds your hand as the white light comes. 'I'm sorry,' she says." },
+        { "speaker": "", "portrait": null, "text": "You try to hold on to the faces. Mira. Kael. Nova. Ryn. Eli. They slip away like water." },
+        { "speaker": "", "portrait": null, "text": "Village 07. Morning. The lanterns gutter out one by one. There are twelve. There are always twelve." },
+        { "speaker": "", "portrait": null, "text": "Mayor Orrin tips his hat. 'Keep to the lanterns, friend.' He sounds relieved. You don't know why." },
+        { "speaker": "", "portrait": null, "text": "The rule is the rule: never cross the boundary. You don't know why it sounds like a promise now." },
+        { "speaker": "", "portrait": null, "text": "Under the floorboards, nothing hums any more. Only, sometimes, in your chest. Low. Patient." },
+        { "speaker": "", "portrait": null, "text": "Out past the old bridge, beyond the blue wall, someone stands in the grass and lifts a hand to wave." },
+        { "speaker": "", "portrait": null, "text": "Grey coat. Calm face. You've never seen him in your life. You wave back anyway. ...Eli?" }
+      ]
+    },
+    {
+      "lines": [
+        { "speaker": "", "portrait": null, "text": "The beacon dies in the furnace. Far above, the swarm loses the thread and turns away, blind." },
+        { "speaker": "", "portrait": null, "text": "AEGIS seals Silo 01. Dr. Hale holds your hand as the white light comes. 'I'm sorry,' she says." },
+        { "speaker": "", "portrait": null, "text": "You try to hold on to the faces. Mira. Kael. Nova. Ryn. Eli. They slip away like water." },
+        { "speaker": "", "portrait": null, "text": "Village 07. Morning. The lanterns gutter out one by one. There are twelve. There are always twelve." },
+        { "speaker": "", "portrait": null, "text": "The rule is the rule: never cross the boundary. You don't know why it sounds like a promise now." },
+        { "speaker": "", "portrait": null, "text": "Under the floorboards, nothing hums any more. Only, sometimes, in your chest. Low. Patient." },
+        { "speaker": "", "portrait": null, "text": "Out past the old bridge, beyond the blue wall, someone stands in the grass and lifts a hand to wave." },
+        { "speaker": "", "portrait": null, "text": "Grey coat. Calm face. You've never seen him in your life. You wave back anyway. ...Eli?" }
+      ]
+    }
+  ]
+}
